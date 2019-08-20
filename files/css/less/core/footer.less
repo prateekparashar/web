@@ -1,0 +1,40 @@
+/*
+ *footer
+ */
+
+.footer{
+	
+    background-color: @color_theme_two;
+    border-top: 1px solid @add_color_theme2;
+    box-shadow: 0 0 .8rem @add_color_theme3;
+	
+	padding: 2rem 0;
+	min-width: 100%;
+	position: relative;
+	z-index: 2;
+}
+
+.copyright{
+	float:left;
+}
+
+.author{
+	float: right;
+}
+
+@media screen and (max-width: 640px){
+	
+	.footer{
+		text-align: center;
+	}
+	
+	.copyright, .author{
+		float: none;
+		width: 100%;
+		margin-bottom: .5rem;
+	}
+	
+	.author{
+		margin-bottom: 0;
+	}
+}

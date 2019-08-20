@@ -1,0 +1,36 @@
+
+.contact-form{
+	width: 70%;
+	margin: 0 auto;
+}
+ 
+.contact-form__item{
+	position: relative;
+	margin-bottom: 2.5rem;
+}
+
+$contact_form_icon_size: 1.5rem; 
+
+.contact-form__icon{  
+	
+	position: absolute;
+	top: 1.5rem;
+	left: 2%;
+	
+	width: $contact_form_icon_size;
+	height: $contact_form_icon_size;
+}
+
+.contact-form__button{
+	width: 20rem;
+	margin: 0 auto;
+	padding: 1rem 2%;
+	display: block;
+}
+ 
+@media screen and (max-width: 640px){
+	
+	.contact-form{
+		width: 100%;
+	}
+}

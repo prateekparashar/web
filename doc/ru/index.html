@@ -1,0 +1,2130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>RuPRO - One Page Responsive Resume Template</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="assets/style.css" />
+</head>
+<body>
+	<header class="dt-wrapper">
+		<div class="dt-container">
+			<h1 class="dt-logo">Ru<span class="dt-logo__dt-label">PRO</span> - One Page Responsive Resume Template</h1>
+		</div>
+	</header>
+	<div class="dt-container dt-content">
+		<div class="dt-main">
+			<div class="dt-section">
+				<p>By:Stas Melnikov</p>
+				<p>Email: <a href="mailto:melnik909@ya.ru">melnik909@ya.ru</a></p>
+				<p>Спасибо за покупку моей разработки. Если у вас возникнут вопросы, то отправьте их на мою почту - <a href="mailto:melnik909@ya.ru">melnik909@ya.ru</a></p>
+			</div>
+			<section id="structure" class="dt-section">
+				<h2 class="dt-title">Файловая структура</h2>
+				<p>После разархивации купленного архива, вы увидете следующую структуру:</p>
+				<pre class="code language-html">
+					<code>
+files/
+│ 
+├──css/
+│  ├─less/
+│  │  ├──bitter_dosis/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──merriweather_sans/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──roboto/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──raleway/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──source_sans_pro/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──color1/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──color2/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──color3/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──color4/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──color6/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──color7/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──color8/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──color9/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──color10/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──color11/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  └──core/	
+│  │     ├──about_me.less
+│  │     ├──animate.less
+│  │     ├──blog.less
+│  │     ├──contact.less
+│  │     ├──form_elements.less
+│  │     ├──footer.less
+│  │     ├──grid.less
+│  │     ├──helpers.less
+│  │     ├──icons.less
+│  │     ├──logo.less
+│  │     ├──navigation.less
+│  │     ├──popup.less
+│  │     ├──portfolio.less
+│  │     ├──preloaders.less
+│  │     ├──services.less
+│  │     ├──skills.less
+│  │     ├──social.less
+│  │     ├──stats.less
+│  │     ├──style.less
+│  │     ├──timeline.less
+│  │     ├──titles.less
+│  │     ├──vegas.less
+│  │     ├──video.less
+│  │     └──welcome.less
+│  └──scss/ 
+├── icons
+├── pages/
+│  ├──bitter_dosis/
+│  │  ├──type1.html
+│  │  ├──type2.html
+│  │  ├──header_background_slider.html
+│  │  └──header_background_youtube_video.html
+│  ├──color/
+│  ├──merriweather_sans_font/
+│  │  ├──type1.html
+│  │  ├──type2.html
+│  │  ├──header_background_slider.html
+│  │  └──header_background_youtube_video.html
+│  ├──navigation_effects/
+│  │  ├──effect1.html 
+│  │  ...
+│  │  └──effect19.html
+│  ├──preloaders/
+│  │  ├──prelaoder1.html
+│  │  ...
+│  │  └──prelaoder10.html
+│  ├──raleway_font/
+│  │  ├──type1.html
+│  │  ├──type2.html
+│  │  ├──header_background_slider.html
+│  │  └──header_background_youtube_video.html
+│  ├──roboto_font/
+│  │  ├──type1.html
+│  │  ├──type2.html
+│  │  ├──header_background_slider.html
+│  │  └──header_background_youtube_video.html
+│  ├──source_sans_pro_font/
+│  │  ├──type1.html
+│  │  ├──type2.html
+│  │  ├──header_background_slider.html
+│  └──└──header_background_youtube_video.html
+└── js/
+    ├──plugins/
+    │  ├──jquery.youtubebackground.min.js
+    │  ├──layerPopup.min.js
+    │  ├──magicLayout.min.js
+    │  └──vegas.min.js
+    ├──jquery.js
+    └──main.js
+					</code>
+				</pre>
+				
+				<ul class="dt-list"> 
+					<li>
+						<span class="dt-label">CSS</span> - CSS стили
+						<ul class="dt-list dt-list_nested">
+							<li>
+								<span class="dt-label">less</span> - less файлы</li>
+								<ul class="dt-list dt-list_nested">
+									<li><span class="dt-label">bitter_dosis</span> - CSS стили с шрифтом "Dosis"</li>
+									<li><span class="dt-label">merriweather_sans</span> - CSS стили с шрифтом "Merriweather Sans"</li>
+									<li><span class="dt-label">roboto</span> - CSS стили с шрифтом "Roboto"</li>
+									<li><span class="dt-label">raleway</span> - CSS стили с шрифтом "Raleway"</li>
+									<li><span class="dt-label">source_sans_pro</span> - CSS стили с шрифтом "Source Sans Pro"</li>
+									<li><span class="dt-label">color1 - color11</span> - CSS стили для демонстрации цветовой схемы</li>
+									<li>
+										<span class="dt-label">core</span> - CSS-стили блоков
+										<ul class="dt-list dt-list_nested">
+											<li><span class="dt-label">about_me.less</span> - CSS для блока "About me"</li>
+											<li><span class="dt-label">animate.less</span> - CSS анимации для блоков</li>
+											<li><span class="dt-label">blog.less</span> - CSS для блока "Blog"</li>
+											<li><span class="dt-label">contact.less</span> - CSS для блока "Contact"</li>
+											<li><span class="dt-label">form_elements.less</span> - CSS для элементов формы</li>
+											<li><span class="dt-label">footer.less</span> - CSS для подвала сайта</li>
+											<li><span class="dt-label">grid.less</span> - CSS для каркаса</li>
+											<li><span class="dt-label">helpers.less</span> - вспомогательные миксины</li>
+											<li><span class="dt-label">icons.less</span> - CSS для иконок</li>
+											<li><span class="dt-label">logo.less</span> - CSS для логотипа</li>
+											<li><span class="dt-label">navigation.less</span> - CSS для навигации</li>
+											<li><span class="dt-label">popup.less</span> - CSS для попапов</li>
+											<li><span class="dt-label">portfolio.less</span> - CSS для блока "Portfolio"</li>
+											<li><span class="dt-label">preloaders.less</span> - CSS для анимации прелоадеров</li>
+											<li><span class="dt-label">services.less</span> - CSS для блока "Services"</li>
+											<li><span class="dt-label">skills.less</span> - CSS для блока "Skills"</li>
+											<li><span class="dt-label">social.less</span> - CSS для элементов социальных сетей</li>
+											<li><span class="dt-label">stats.less</span> - CSS для блока "Stats"</li>
+											<li><span class="dt-label">style.less</span> - сброс CSS стилей</li>
+											<li><span class="dt-label">timeline.less</span> - CSS для блока "Experrience"</li>
+											<li><span class="dt-label">titles.less</span> - CSS для заголовков</li>
+											<li><span class="dt-label">vegas.less</span> - CSS плагина Vegas</li>
+											<li><span class="dt-label">video.less</span> - CSS плагина jQuery.BackgroundVideo</li>
+											<li><span class="dt-label">welcome.less</span> - CSS для блока "Welcome"</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span class="dt-label">scss</span> - scss файлы</li>
+							</li>
+						</ul>
+					</li>
+					<li><span class="dt-label">icons</span> - svg иконки</li>
+					<li>
+						<span class="dt-label">pages</span> - готовые html страницы
+						<ul class="dt-list dt-list_nested">
+							<li>
+								<span class="dt-label">bitter_dosis</span> - пример со шрифтом "Dosis"
+								<ul class="dt-list dt-list_nested">
+									<li><span class="dt-label">type1.html</span> - первый тип страницы</span></li>
+									<li><span class="dt-label">type2.html</span> - второй тип страницы</li>
+									<li><span class="dt-label">header_background_slider.html</span> - пример страницы с фоновым слайдером</li>
+									<li><span class="dt-label">header_background_youtube_video.html</span> - пример страницы с фоновым видео</li>
+								</ul>
+							</li>
+							<li>
+								<span class="dt-label">color</span> - примеры с различными цветами(параметр - <a href="#add_color_theme">@add_color_theme</a>)
+								<ul class="dt-list dt-list_nested">
+									<li><span class="dt-label">type1_color1.html и type2_color1.html</span> - примеры с цветом #a74752</li>
+									<li><span class="dt-label">type1_color2.html и type2_color2.html</span> - пример с цветом #f1c311</li>
+									<li><span class="dt-label">type1_color3.html и type2_color3.html</span> - пример с цветом #f4511e</li>
+									<li><span class="dt-label">type1_color4.html и type2_color4.html</span> - пример с цветом #42a5f5</li>
+									<li><span class="dt-label">type1_color5.html и type2_color5.html</span> - пример с цветом #26c6da</li>
+									<li><span class="dt-label">type1_color6.html и type2_color6.html</span> - пример с цветом #825333</li>
+									<li><span class="dt-label">type1_color7.html и type2_color7.html</span> - пример с цветом #513f66</li>
+									<li><span class="dt-label">type1_color8.html и type2_color8.html</span> - пример с цветом #9e715a</li>
+									<li><span class="dt-label">type1_color9.html и type2_color9.html</span> - пример с цветом #1f4b8e</li>
+									<li><span class="dt-label">type1_color10.html и type2_color10.html</span> - пример с цветом #f5a6b1</li>
+									<li><span class="dt-label">type1_color11.html и type2_color11.html</span> - пример с цветом #43bd8e</li>
+								</ul>
+							</li>
+							<li><span class="dt-label">merriweather_sans_font</span> - пример со шрифтом "Merriweather Sans"</li>
+							<li><span class="dt-label">navigation_effects</span> - примеры эффектов для мобильной версии навигации</li>
+							<li><span class="dt-label">preloaders</span> - примеры прелоадеров</li>
+							<li><span class="dt-label">raleway_font</span> - пример со шрифтом "Raleway"</li>
+							<li><span class="dt-label">roboto_font</span> - пример со шрифтом "Roboto"</li>
+							<li><span class="dt-label">source_sans_pro_font</span> - пример со шрифтом "Source Sans Pro"</li>
+						</ul>
+					</li>
+					<li>
+						<span class="dt-label">js</span> - js скрипты
+						<ul class="dt-list dt-list_nested">
+							<li>
+								<span class="dt-label">plugins</span> - используемые jQuery плагины
+								<ul class="dt-list dt-list_nested">
+									<li><a href="#youtubebackground"  class="dt-label">jquery.youtubebackground.min.js</a></li>
+									<li><a href="#layerPopup"  class="dt-label">layerPopup.min.js</a></li>
+									<li><a href="#magicLayout"  class="dt-label">magicLayout.min.js</a></li>
+									<li><a href="#vegas"  class="dt-label">vegas.min.js</a></li>
+								</ul>
+							</li>
+							<li><span class="dt-label">jquery.js</span> - библиотека jQuery</li>
+							<li><span class="dt-label">main.js</span> - инициализирующий файл</li>
+						</ul>
+					 </li>
+				</ul>
+			</section>
+			<section id="settings" class="dt-section">
+				<h2 class="dt-title">Настройки</h2>
+				<p>Настройки находятся в файле settings. Для редактирования настроек вы должны использовать любой компилятор для LESS или SASS.</p>
+
+				<table>
+					<thead>
+					<tr>
+						<th>Названия переменной</th>
+						<th>Значение</th>
+						<th>Описание</th>
+					</tr>
+					</thead>
+						<tbody>
+						<tr>
+							<td>@color_theme_one</td>
+							<td>#000</td>
+							<td>Основной цвет</td>
+						</tr>
+						<tr>
+							<td>@color_theme_two</td>
+							<td>#fff</td>
+							<td>Основной цвет</td>
+						</tr>
+						<tr id="add_color_theme">
+							<td>@add_color_theme</td>
+							<td>#a74752</td>
+							<td>
+								Дополнительный цвет. Доступно 11 цветовов. 
+								(#a74752, #f1c311, #f4511e, #42a5f5, #26c6da, #825333, #513f66, #9e715a, #1f4b8e, #f5a6b1, #43bd8e).
+							</td>
+						</tr>
+						<tr>
+							<td>@add_color_theme2</td>
+							<td>#eee</td>
+							<td>Дополнительный цвет</td>
+						</tr>
+						<tr>
+							<td>@add_color_theme3</td>
+							<td>#ddd</td>
+							<td>Дополнительный цвет</td>
+						</tr>
+						<tr>
+							<td>@color_theme_one_bg</td>
+							<td>rgba(0, 0, 0, 0.7)</td>
+							<td>Цвет для подложки у фоновых изображений.</td>
+						</tr>	
+						<tr>
+							<td>@font_family</td>
+							<td>'Raleway', sans-serif</td>
+							<td>Шрифт используемый в теме. Доступно 5 вариантов ('Raleway', sans-serif; 'Roboto', sans-serif; 'Merriweather Sans', sans-serif; 'Dosis', sans-serif; 'Source Sans Pro', sans-serif)</td>
+						</tr>						
+					</tbody>
+				</table>
+			</section>
+			<section id="typography" class="dt-section">
+				<h2 class="dt-title">Типографика</h2>
+				<p>В теме используются Google шрифты. Список доступных шрифтов:</p>
+				<ul class="dt-list">
+					<li>https://fonts.googleapis.com/css?family=Bitter|Dosis:400,300,700"
+					<li>https://fonts.googleapis.com/css?family=Raleway:400,300,700</li>
+					<li>https://fonts.googleapis.com/css?family=Roboto:400,300,700</li>
+					<li>https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,700</li>
+					<li>https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700</li>
+				</ul>
+				<section id="mixins-fonts">
+					<h3 class="dt-title">Миксины для работы со шрифтами</h3>
+					<p>В теме использую следующие миксины для работы со шрифтами:</p>
+					<table>
+						<thead>
+						<tr>
+							<th>Название миксина</th>
+							<th>Font-weight</th>
+							<th>Font-size</th>
+						</tr>
+						</thead>
+							<tbody>
+							<tr>
+								<td>.font_400_s28()</td>
+								<td>400</td>
+								<td>2.8 rem</td>
+							</tr>
+							<tr>
+								<td>.font_400_s24()</td>
+								<td>400</td>
+								<td>2.4rem</td>
+							</tr>
+							<tr>
+								<td>.font_400_s22()</td>
+								<td>400</td>
+								<td>2.2rem</td>
+							</tr>
+							<tr>
+								<td>.font_400_s16()</td>
+								<td>400</td>
+								<td>1.6rem</td>
+							</tr>
+							<tr>
+								<td>.font_400_s14()</td>
+								<td>400</td>
+								<td>1.4rem</td>
+							</tr>
+							<tr>
+								<td>.font_700_s80()</td>
+								<td>700</td>
+								<td>8rem</td>
+							</tr>
+							<tr>
+								<td>.font_700_s28()</td>
+								<td>700</td>
+								<td>2.8rem</td>
+							</tr>
+							<tr>
+								<td>.font_700_s24()</td>
+								<td>700</td>
+								<td>2.4rem</td>
+							</tr>
+							<tr>
+								<td>.font_700_s22()</td>
+								<td>700</td>
+								<td>2.2rem</td>
+							</tr>
+							<tr>
+								<td>.font_700_s18()</td>
+								<td>700</td>
+								<td>1.8rem</td>
+							</tr>
+							<tr>
+								<td>.font_700_s16()</td>
+								<td>700</td>
+								<td>1.6rem</td>
+							</tr>
+							<tr>
+								<td>.font_700_s14()</td>
+								<td>700</td>
+								<td>1.4rem</td>
+							</tr>
+							<tr>
+								<td>.font_300_s35()</td>
+								<td>300</td>
+								<td>3.5rem</td>
+							</tr>
+							<tr>
+								<td>.font_300_s28()</td>
+								<td>300</td>
+								<td>2.8rem</td>
+							</tr>
+							<tr>
+								<td>.font_300_s24()</td>
+								<td>300</td>
+								<td>2.4rem</td>
+							</tr>
+							<tr>
+								<td>.font_300_s16()</td>
+								<td>300</td>
+								<td>1.6rem</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section id="titles">
+					<h3 class="dt-title">Заголовки</h3>
+					<table>
+						<thead>
+						<tr>
+							<th>Название класса</th>
+							<th>Размер</th>
+						</tr>
+						</thead>
+							<tbody>
+							<tr>
+								<td>.title</td>
+								<td>.font_300_s35();</td>
+							</tr>
+							<tr>
+								<td>.title_middle</td>
+								<td>.font_300_s28();</td>
+							</tr>
+							<tr>
+								<td>.title_small</td>
+								<td>.font_700_s24();</td>
+							</tr>
+							<tr>
+								<td>.title_little</td>
+								<td>.font_700_s22();</td>
+							</tr>
+							<tr>
+								<td>.subtitle</td>
+								<td>.font_400_s16();</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</section>
+			<section id="icons" class="dt-section">
+				<h2 class="dt-title">Иконки</h3>
+				<p>В теме использую следующие классы для работы с иконками</p>
+				<table>
+					<thead>
+					<tr>
+						<th>Название класса</th>
+						<th>Описание</th>
+					</tr>
+					</thead>
+						<tbody>
+						<tr>
+							<td>.icon</td>
+							<td>Основной класс. По умолчанию иконки имеют размер 3rem.</td>
+						</tr>
+						<tr>
+							<td>.icon_middle</td>
+							<td>Класс для вывода иконок размера 2rem</td>
+						</tr>
+						<tr>
+							<td>.icon_rounded</td>
+							<td>Класс для вывода иконок с обводкой</td>
+						</tr>
+						<tr>
+							<td>.icon_rounded-hover</td>
+							<td>Класс для эффекта при навдению мыши на иконку</td>
+						</tr>
+						<tr>
+							<td>.icon_rounded-black</td>
+							<td>Класс для вывода иконок в черном кружке</td>
+						</tr>
+						<tr>
+							<td>.icon_rounded-crimson</td>
+							<td>Классы для вывода в бордовом кружке</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="html" class="dt-section">
+				<h2 class="dt-title">HTML-структура</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+ &lt;head&gt;
+ 
+  &lt;!-- мета-информация--&gt;
+ 
+  &lt;title&gt;RuPRO - One Page Responsive Resume Template&lt;/title&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;
+  
+   &lt;!-- подключение CSS--&gt;
+  
+  &lt;link rel="stylesheet" href="../../css/less/raleway/main.css" type="text/css"/&gt;
+  &lt;link href="https://fonts.googleapis.com/css?family=Raleway:400,300,700" rel="stylesheet"/&gt; 
+  
+ &lt;/head&gt;
+ &lt;/body&gt;
+
+  &lt;!-- подключение JS-скриптов--&gt;
+
+ &lt;script src="../../js/jquery.js"&gt;&lt;/script&gt;
+ &lt;script src="../../js/plugins/magicLayout.min.js"&gt;&lt;/script&gt;
+ &lt;script src="../../js/plugins/layerPopup.min.js"&gt;&lt;/script&gt;
+ &lt;script src="../../js/main.js"&gt;&lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+					</code>
+				</pre>
+			</section>				
+			<section id="welcome" class="dt-section">
+				<h2 class="dt-title">HTML-структура блока "Welcome"</h2>
+				<pre class="code language-html">
+					<code>
+&lt;header id="welcome" class="header box_blur display_js"&gt;
+ &lt;div class="main-container main-container_fullheight"&gt;
+  &lt;div class="welcome"&gt;
+   &lt;h1 class="welcome__header"&gt;
+    &lt;span class="welcome__name layer" data-show-effect="fadeInDown" data-show-delay="500"&gt;I'am Bernard Balfour&lt;/span&gt;
+    &lt;span class="welcome__label layer" data-show-effect="fadeInUp" data-show-delay="500"&gt;
+     Front-end developer from Denmark
+    &lt;/span&gt;
+   &lt;/h1&gt;
+   &lt;div class="welcome__footer"&gt;
+    &lt;a href="#" class="welcome__link layer" data-show-effect="fadeInUp" data-show-delay="1000"&gt;download resume&lt;/a&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/header&gt;
+					</code>
+				</pre>
+			</section>			
+			<section id="about" class="dt-section">
+				<h2 class="dt-title">HTML-структура блока "About me"</h2>
+				<pre class="code language-html">
+					<code>
+&lt;section id="about" class="wrapper display_js"&gt;
+
+  &lt;div class="main-container main-container_padding"&gt;
+   
+   &lt;header class="main-container__header"&gt;
+    &lt;h2 class="title title_bottom-decor"&gt;About me&lt;/h2&gt;
+    &lt;div class="subtitle"&gt;Let me introduce myself&lt;/div&gt;
+   &lt;/header&gt;
+
+   &lt;div class="content about-me"&gt;
+    &lt;div class="about-me__layout layer" data-show-effect="fadeInLeft" data-show-delay="200"&gt;
+     &lt;div class="avatar"&gt;
+      &lt;img class="avatar__img responsive-img"  src="http://placehold.it/300x300" alt="Avatar"/&gt;
+     &lt;/div&gt;
+     &lt;div class="about-me__content"&gt;
+      ...
+     &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;section class="about-me__sidebar layer" data-show-effect="fadeInRight" data-show-delay="200"&gt;
+     &lt;h3 class="title title_middle about-me__title"&gt;PERSONAL &lt;span class="about-me__title-label"&gt;INFO&lt;/span&gt;&lt;/h3&gt;
+     &lt;div class="about-me__row"&gt;
+      &lt;div class="about-me__column"&gt;
+       &lt;div class="about-me__tag"&gt;Name&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="about-me__column"&gt;
+       &lt;div class="about-me__value"&gt;Bernard Balfour&lt;/div&gt;
+      &lt;/div&gt;
+     &lt;/div&gt;
+     ...
+    &lt;/div&gt;
+   &lt;/section&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+					</code>
+				</pre>
+			</section>	
+			<section id="skills" class="dt-section">
+				<h2 class="dt-title">HTML-структура блока "Skills"</h2>
+				<pre class="code language-html">
+					<code>
+&lt;section id="skills" class="wrapper box_blur skills-display display_js"&gt;
+ &lt;div class="main-container main-container_padding"&gt;
+  &lt;header class="main-container__header"&gt;
+   &lt;h2 class="title title_bottom-decor title_white"&gt;Skills&lt;/h2&gt;
+  &lt;/header&gt;
+  &lt;div class="content skills"&gt;
+   &lt;div class="skills__column layer" data-show-effect="fadeIn" data-show-delay="400"&gt;
+    ...
+   &lt;/div&gt;
+   &lt;div class="skills__column skills-bar"&gt;
+    &lt;div class="skills-bar__item"&gt;
+     &lt;div class="skill-bar layer skill-bar_js" data-show-effect="fadeInLeft" data-show-delay="200" data-skill-bar-width="90%"&gt;
+      &lt;div class="skill layer" data-show-effect="fadeIn" data-show-delay="1200"&gt;
+       &lt;span class="skill__name"&gt;HTML&lt;/span&gt;
+       &lt;span class="skill__value skill__value_js"&gt;&lt;/span&gt;
+      &lt;/div&gt;
+     &lt;/div&gt;
+    &lt;/div&gt;
+    ...
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+					</code>
+				</pre>
+				<h4>Описание специфичных классов и атрибутов для блока</h4>
+				<ul class="dt-list">
+					<li><span class="dt-label">data-skill-bar-width</span> - значения для ширины "прогресс бара"</li>
+					<li><span class="dt-label">skill-bar_js</span> - класс для вызова расчета "прогресс бара"</li>
+					<li><span class="dt-label">skill__value_js</span> - класс для добавления значения "прогресс бара"</li>
+				</ul>
+			</section>	
+			<section id="experience" class="dt-section">
+				<h2 class="dt-title">HTML-структура блока "Experience"</h2>
+				<pre class="code language-html">
+					<code>
+&lt;section id="experience" class="wrapper display_js"&gt;
+ &lt;div class="main-container main-container_padding"&gt;
+  &lt;header class="main-container__header"&gt;
+   &lt;h2 class="title title_bottom-decor"&gt;Experience&lt;/h2&gt;
+   &lt;div class="subtitle"&gt;More about my experience&lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class="timeline"&gt;
+   &lt;div class="timeline__line layer" data-show-effect="fadeInDown" data-show-delay="0" data-time="2000"&gt;&lt;/div&gt;
+   &lt;div class="timeline__layout"&gt;
+    &lt;div class="timeline__dotted layer" data-show-effect="zoomIn" data-show-delay="500" data-time="300"&gt;&lt;/div&gt;
+     &lt;div class="timeline__inner timeline__time layer" data-show-effect="fadeIn" data-show-delay="900"&gt;
+     &lt;span class="timeline__date"&gt;2014 - 2015&lt;/span&gt;
+     &lt;span class="timeline__place-work"&gt;Web Studio "Name"&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;article class="timeline__inner timeline__content layer" data-show-effect="fadeInRight" data-show-delay="1000"&gt;
+     &lt;h3 class="title title_small timeline__title"&gt;Front-end developer&lt;/h3&gt;
+     &lt;div class="timeline__description"&gt;
+       ...
+     &lt;/div&gt;
+    &lt;/article&gt;
+   &lt;/div&gt;				
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+					</code>
+				</pre>
+			</section>
+			<section id="stats" class="dt-section">
+				<h2 class="dt-title">HTML-структура блока "Stats"</h2>
+				<pre class="code language-html">
+					<code>
+&lt;section id="stats" class="wrapper stats-display box_blur display_js"&gt;
+ &lt;div class="main-container main-container_padding"&gt;
+  &lt;header class="main-container__header"&gt;
+   &lt;h2 class="title title_bottom-decor title_white"&gt;My stats&lt;/h2&gt;
+  &lt;/header&gt;
+  &lt;div class="content stats"&gt;
+   &lt;div class="stats__item layer" data-show-effect="zoomIn" data-show-delay="300"&gt;
+    &lt;i class="icon icon-thumbs-up stats__icon"&gt;&lt;/i&gt;
+    &lt;div class="stats__label"&gt;20+ projects done&lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+					</code>
+				</pre>
+			</section>	
+			<section id="services" class="dt-section">
+				<h2 class="dt-title">HTML-структура блока "Services"</h2>
+				<pre class="code language-html">
+					<code>
+&lt;section id="services" class="wrapper display_js"&gt;
+ &lt;div class="main-container main-container_padding main-container_no-padding-bottom"&gt;
+  &lt;header class="main-container__header"&gt;
+   &lt;h2 class="title title_bottom-decor"&gt;Services&lt;/h2&gt;
+   &lt;div class="subtitle"&gt;What can I do for you&lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class="content services"&gt;
+   &lt;article class="service layer" data-show-effect="zoomIn" data-show-delay="0"&gt;
+    &lt;i class="icon icon_rounded icon_rounded-crimson icon-design service__icon"&gt;&lt;/i&gt;
+    &lt;header class="service__header"&gt;
+     &lt;h4 class="title title_small service__name"&gt;Title&lt;/h4&gt;
+    &lt;/header&gt;
+    &lt;div class="service__description"&gt;
+     ...
+    &lt;/div&gt;
+   &lt;/article&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+					</code>
+				</pre>
+			</section>	
+			<section id="portfolio" class="dt-section">
+				<h2 class="dt-title">HTML-структура блока "Portfolio"</h2>
+				<p>
+					Блок "Портфолио" имеет два вида вывода инофрмации. 
+				</p>
+				<h3>Структрура контента type1.html:</h3>
+				<pre class="code language-html">
+					<code>
+&lt;section id="portfolio" class="wrapper portfolio display_js"&gt;
+ &lt;header class="portfolio__header"&gt;
+  &lt;h2 class="title title_bottom-decor"&gt;Portfolio&lt;/h2&gt;
+  &lt;div class="subtitle"&gt;My latest works&lt;/div&gt;
+ &lt;/header&gt;
+ &lt;div class="content list-works"&gt;
+ 
+  &lt;div class="list-works__column"&gt;
+  
+   &lt;a href="#" class="list-works__item list-works__item_big layer open-popup_js" data-show-effect="fadeIn" data-show-delay="100" data-id="he"&gt;
+    &lt;div class="list-works__wrap-img"&gt;
+     &lt;img src="http://placehold.it/960x960" class="responsive-img" alt="Work" /&gt;
+    &lt;/div&gt;	
+    &lt;div class="list-works__overlay"&gt; 
+     &lt;span class="list-works__name-project list-works__name-project_fade"&gt;Title work&lt;/span&gt;
+     &lt;span class="list-works__link-project"&gt;showmore&lt;/span&gt;
+    &lt;/div&gt;
+   &lt;/a&gt;
+   
+   &lt;a href="#" class="list-works__item layer open-popup_js" data-show-effect="fadeIn" data-show-delay="800" data-id="aa"&gt;
+    &lt;div class="list-works__wrap-img"&gt;
+     &lt;img src="http://placehold.it/480x480" class="responsive-img" alt="Work" /&gt;
+    &lt;/div&gt;
+    &lt;div class="list-works__overlay"&gt; 
+     &lt;span class="list-works__name-project list-works__name-project_fade"&gt;Title work&lt;/span&gt;
+     &lt;span class="list-works__link-project"&gt;showmore&lt;/span&gt;
+    &lt;/div&gt;
+   &lt;/a&gt;
+    ...
+  &lt;/div&gt;
+  
+  &lt;div class="list-works__column"&gt;
+    ...
+   &lt;a href="#" class="list-works__item layer open-popup_js" data-show-effect="fadeIn" data-show-delay="600" data-id="ml"&gt;
+    &lt;div class="list-works__wrap-img"&gt;
+     &lt;img src="http://placehold.it/480x480" class="responsive-img" alt="Work" /&gt;
+    &lt;/div&gt;
+    &lt;div class="list-works__overlay"&gt; 
+     &lt;span class="list-works__name-project list-works__name-project_fade"&gt;Title work&lt;/span&gt;
+     &lt;span class="list-works__link-project"&gt;showmore&lt;/span&gt;
+    &lt;/div&gt;
+   &lt;/a&gt;	
+   
+   &lt;a href="#" class="list-works__item list-works__item_big layer open-popup_js" data-show-effect="fadeIn" data-show-delay="700" data-id="lrmw"&gt;
+    &lt;div class="list-works__wrap-img"&gt;
+     &lt;img src="http://placehold.it/960x960" class="responsive-img" alt="Work" /&gt;
+    &lt;/div&gt;
+    &lt;div class="list-works__overlay"&gt; 
+     &lt;span class="list-works__name-project list-works__name-project_fade"&gt;Title work&lt;/span&gt;
+     &lt;span class="list-works__link-project"&gt;showmore&lt;/span&gt;
+    &lt;/div&gt;
+   &lt;/a&gt;
+  &lt;/div&gt;
+
+ &lt;/div&gt;
+&lt;/section&gt;
+					</code>
+				</pre>
+				<p>
+					Контентная часть делиться на два столбца, в которые вы можете добавлять элементы.
+				</p>				
+				<h4>Описание специфичных классов и атрибутов для блока</h4>
+				<ul class="dt-list">
+					<li><span class="dt-label">.list-works__item</span> - стандартный класс для вывода работы с шириной 50% от ширины колонки </li>
+					<li><span class="dt-label">.list-works__item_big</span> - класс для вывода работы с шириной 100% от ширины колонки </li>
+				</ul>
+				
+				<h3>Структрура контента type2.html:</h3>
+				<pre class="code language-html">
+					<code>
+&lt;div class="list-works list-works_visible-description-yes"&gt;
+ &lt;div class="list-works__element"&gt;
+ 
+ &lt;!-- изображение проекта--&gt;
+ 
+  &lt;div class="list-works__wrap-img list-works__wrap-img_blur layer" data-show-effect="fadeInLeft" data-show-delay="0" data-time="500"&gt;
+   &lt;svg class="list-works__blur-svg"&gt;
+   
+   &lt;!-- уникальный id для тега filter--&gt;
+   
+    &lt;filter id="blur"&gt; 
+     &lt;feComponentTransfer&gt;
+      &lt;feFuncR type="gamma" amplitude=".3" exponent=".99" /&gt;
+      &lt;feFuncG type="gamma" amplitude=".3" exponent=".99"  /&gt;
+      &lt;feFuncB type="gamma" amplitude=".3" exponent=".99" /&gt;
+     &lt;/feComponentTransfer&gt;
+     &lt;feColorMatrix values="0" type="saturate" /&gt;
+    &lt;/filter&gt;
+	
+	&lt;!-- добавим id атрибута тега filter в атрибут 'filter'--&gt;
+	
+    &lt;image x="0" y="0" width="100%" height="100%" filter="url(#blur)" xlink:href="http://placehold.it/960x960" /&gt;
+   &lt;/svg&gt;
+   &lt;img src="http://placehold.it/960x960" class="responsive-img" alt="Work" /&gt;
+  &lt;/div&gt;
+  
+  &lt;!-- описание проекта --&gt;
+  
+  &lt;div class="list-works__description"&gt;
+   &lt;h3 class="title list-works__name-project layer" data-show-effect="fadeInDown" data-show-delay="500" data-time="300"&gt;Title work&lt;/h3&gt;
+   &lt;div class="list-works__content layer" data-show-effect="fadeIn" data-show-delay="700"&gt;
+    ...
+   &lt;/div&gt;
+   &lt;footer class="list-works__footer"&gt;
+   
+   &lt;!--блок с технологиями--&gt;
+   
+    &lt;div class="project-tech layer" data-show-effect="fadeIn" data-show-delay="800"&gt;
+	
+     &lt;h4 class="title title_little title_bold title_text-transform-no project-tech__title"&gt;Technologies:&lt;/h4&gt;
+     &lt;span class="icon icon_middle icon_rounded icon_rounded-black icon-html5 project-tech__icon layer" data-show-effect="zoomIn"
+           data-time="300" data-show-delay="1200"&gt;&lt;/span&gt;
+
+    &lt;/div&gt;
+	 
+    &lt;a href="#" class="list-works__show-project layer" data-show-effect="fadeInUp" data-time="300" data-show-delay="800"&gt;Show Project&lt;/a&gt;
+   
+   &lt;/footer&gt;
+  &lt;/div&gt;
+  
+  ...
+  
+ &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<p>
+					Для создания эффекта вы должны использовать svg. В параметрах вы должны указывать уникальный id для тега < filter >. Далее в атрибуде filter указать значение id.
+				</p>
+			</section>
+			<section id="blog" class="dt-section">
+				<h2 class="dt-title">HTML-структура блока "My journal"</h2>
+				<pre class="code language-html">
+					<code>
+&lt;section id="blog" class="wrapper display_js"&gt;
+ &lt;div class="main-container main-container_padding main-container_no-padding-bottom"&gt;
+  &lt;header class="main-container__header"&gt;
+   &lt;h2 class="title title_bottom-decor"&gt;MY JOURNAL&lt;/h2&gt;
+   &lt;div class="subtitle"&gt;My latest news&lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class="content blog"&gt;
+  
+  &lt;!-- пост без изображения --&gt;
+  
+   &lt;article class="blog__column post post_footer-yes layer" data-show-effect="flipInY" data-time="2000" data-show-delay="0"&gt;
+    &lt;div class="post__layout"&gt;
+     &lt;h4 class="title title_little post__title"&gt;
+	  &lt;a href="#" class="open-popup_js" data-id="blog-popup"&gt;LOREM IPSUM DOLOR SIT AMET&lt;/a&gt;
+     &lt;/h4&gt;
+     &lt;div class="post__description"&gt;
+      ...
+     &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;footer class="post__footer"&gt;
+     &lt;span class="post__date"&gt;30 December, 2015&lt;/span&gt;
+    &lt;/footer&gt;
+   &lt;/article&gt;
+  
+  &lt;!-- запись с изображением--&gt;
+     
+   &lt;article class="blog__column post layer" data-show-effect="flipInY"  data-time="2000" data-show-delay="100"&gt;
+    &lt;header class="post__header"&gt;
+     &lt;img src="http://placehold.it/480x320" class="responsive-img post__img open-popup_js" data-id="blog-popup" alt="LOREM IPSUM" /&gt;
+     &lt;span class="post__date post__date_absolute"&gt;30 November, 2015&lt;/span&gt;
+    &lt;/header&gt;
+    &lt;div class="post__layout"&gt;
+     &lt;h4 class="title title_little post__title"&gt;
+      &lt;a href="#" class="open-popup_js" data-id="blog-popup"&gt;LOREM IPSUM DOLOR SIT AMET&lt;/a&gt;
+     &lt;/h4&gt;
+     &lt;div class="post__description"&gt;
+      ...
+     &lt;/div&gt;
+    &lt;/div&gt;
+   &lt;/article&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+					</code>
+				</pre>
+			</section>			
+			<section id="contact" class="dt-section">
+				<h2 class="dt-title">HTML-структура блока "Contact"</h2>
+				<pre class="code language-html">
+					<code>
+&lt;section id="contact" class="wrapper display_js"&gt;
+ &lt;div class="main-container main-container_padding"&gt;
+  &lt;header class="main-container__header"&gt;
+   &lt;h2 class="title title_bottom-decor"&gt;Contact&lt;/h2&gt;
+   &lt;div class="subtitle"&gt;Get in touch&lt;/div&gt;
+  &lt;/header&gt;
+  &lt;form class="contact-form"&gt;
+   &lt;div class="contact-form__item layer"  data-show-effect="fadeInLeft" data-show-delay="400"&gt;
+    &lt;i class="icon icon-user contact-form__icon"&gt;&lt;/i&gt;
+    &lt;input class="text-field" placeholder="Your name" name="username" required/&gt;
+   &lt;/div&gt;
+   &lt;div class="contact-form__item layer"  data-show-effect="fadeInRight" data-show-delay="500"&gt;
+    &lt;i class="icon icon-mail contact-form__icon"&gt;&lt;/i&gt;
+    &lt;input class="text-field" type="email" placeholder="Your email" name="email" required/&gt;
+   &lt;/div&gt;
+   &lt;div class="contact-form__item layer"  data-show-effect="fadeInLeft" data-show-delay="600"&gt;
+    &lt;i class="icon icon-message contact-form__icon"&gt;&lt;/i&gt;
+    &lt;textarea class="text-field textarea" placeholder="Your message" name="message" required&gt;&lt;/textarea&gt;
+   &lt;/div&gt;
+   &lt;button class="button contact-form__button layer"  data-show-effect="fadeInRight" data-show-delay="700"&gt;
+    &lt;span class="button__label"&gt;Send&lt;/span&gt;
+   &lt;/button&gt;
+  &lt;/form&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+					</code>
+				</pre>
+			</section>		
+			<section id="magicLayout" class="dt-section">
+				<h2 class="dt-title">Инициализация плагина для появления элементов</h2>
+				<p>
+					Во-первых, вам обязательно нужно подключить файлы magicLayout.min.js и main.js. 
+					Далее, вам потребуется добавить класс layer к инициализирующему элементу, и установить у него значения для следующих атрибутов
+					<ul class="dt-list">
+						<li><span class="dt-label">data-show-effect</span> - эффект появления</li>
+						<li><span class="dt-label">data-show-delay</span> - задержка перед началом анимации</li>
+						<li><span class="dt-label">data-time</span> - продолжительность анимации. Вы можете не указывать его, тогда анимация будет продолжаться 1000 ms.</li>
+					</ul>
+				</p>
+				<p>Например,</p>
+				<pre class="code language-html">
+					<code>
+&lt;header id="welcome" class="header box_blur display_js"&gt;
+ &lt;div class="main-container main-container_fullheight"&gt;
+  &lt;div class="welcome"&gt;
+   &lt;h1 class="welcome__header"&gt;
+    &lt;span class="welcome__name layer" data-show-effect="fadeInDown" data-show-delay="500"&gt;I'am Bernard Balfour&lt;/span&gt;
+    &lt;span class="welcome__label layer" data-show-effect="fadeInUp" data-show-delay="500"&gt;
+     Front-end developer from Denmark
+    &lt;/span&gt;
+   &lt;/h1&gt;
+   &lt;div class="welcome__footer"&gt;
+    &lt;a href="#" class="welcome__link layer" data-show-effect="fadeInUp" data-show-delay="1000"&gt;download resume&lt;/a&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/header&gt;
+					</code>
+				</pre>
+				<h3>Список эффектов</h3>
+				<table>
+					<thead>
+						<tr>
+							<th colspan="4">Эффекты для появления</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>jump</td>
+							<td>impulse</td>
+							<td>jump</td>
+							<td>jumpIn</td>
+						</tr>
+						<tr>
+							<td>jumpInDown</td>
+							<td>jumpInLeft</td>
+							<td>jumpInRight</td>
+							<td>jumpInUp</td>
+						</tr>
+						<tr>
+							<td>jump</td>
+							<td>fadeIn</td>
+							<td>fadeInDown</td>
+							<td>fadeInDownBig</td>
+						</tr>
+						<tr>
+							<td>fadeInLeft</td>
+							<td>fadeInLeftBig</td>
+							<td>fadeInRight</td>
+							<td>fadeInRightBig</td>
+						</tr>
+						<tr>
+							<td>fadeInUp</td>
+							<td>fadeInUpBig</td>
+							<td>flipInX</td>
+							<td>flipInY</td>
+						</tr>
+						<tr>	
+							<td>lightSpeedIn</td>
+							<td>rotateIn</td>
+							<td>rotateInDownLeft</td>
+							<td>rotateInDownRight</td>
+						</tr>
+						<tr>
+							<td>rotateInUpLeft</td>
+							<td>rotateInUpRight</td>
+							<td>rollIn</td>
+							<td>zoomIn</td>
+						</tr>
+						<tr>
+							<td>zoomInDown</td>
+							<td>zoomInLeft</td>
+							<td>zoomInRight</td>
+							<td>zoomInUp</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>	
+			<section id="popup" class="dt-section">
+				<h2 class="dt-title">Инициализация попапов</h2>
+				<p>
+					Во-первых, вам обязательно нужно подключить файлы layerPopup.min.js и main.js. Далее, вам требуется добавить класс open-popup_js к инициализирующему элементу, и у него установить значения следующих атрибутов
+					<ul class="dt-list">
+						<li><span class="dt-label">data-show-effect</span> - эффект появления</li>
+						<li><span class="dt-label">data-show-delay</span> - задержка перед началом анимации</li>
+						<li><span class="dt-label">data-id</span> - id всплывающего окошка</li>
+					</ul>
+				</p>
+				<p>Например,</p>
+				<pre class="code language-html">
+					<code>
+&lt;a href="#" class="list-works__item layer open-popup_js" data-show-effect="fadeIn" data-show-delay="1000" data-id="mrt"&gt;...&lt;/a&gt;
+					</code>
+				</pre>
+				<p>Далее, вам нужно создать сам попап. Для попапа с работой вы должны использовать следующий HTML</p>
+				<pre class="code language-html">
+					<code>
+&lt;div id="mrt" class="popup lrmw__popup"&gt;
+ &lt;span class="close-arrow popup__close_js"&gt;&lt;/span&gt;
+ &lt;div class="popup__inner"&gt;
+  &lt;div class="popup__layout"&gt;
+  
+  &lt;!-- Шапка попапа--&gt;
+  
+   &lt;header class="popup__header box_blur lrmw_layer" data-show-delay="500"
+           data-hide-delay="900" data-time="500" data-show-effect="fadeIn" data-hide-effect="fadeOut"&gt;    
+    &lt;h3 class="title popup__title"&gt;
+     &lt;span class="popup__title-label lrmw_layer"  data-show-delay="900" data-hide-delay="450"
+           data-time="500" data-show-effect="lightSpeedIn" data-hide-effect="seesaw"&gt;Title&lt;/span&gt;
+    &lt;/h3&gt;
+    &lt;img src="http://placehold.it/1200x500" class="responsive-img" alt="Title popup" /&gt;
+   &lt;/header&gt;
+   
+    &lt;!-- Контент попапа--&gt;
+   
+   &lt;div class="popup__content"&gt;
+   
+   &lt;!-- Блок с описанием проекта--&gt;
+   
+    &lt;div class="popup__description lrmw_layer" data-show-delay="200" data-hide-delay="600" data-time="500" data-show-effect="fadeInLeft"
+         data-hide-effect="fadeOutLeft"&gt;
+     &lt;p&gt;...&lt;/p&gt;
+    &lt;/div&gt;
+	
+    &lt;div class="popup__sidebar lrmw_layer" data-show-delay="400" data-hide-delay="600" data-time="500" data-show-effect="fadeInRight"
+         data-hide-effect="fadeOutRight"&gt;
+     
+	 &lt;!-- Блок с технологиями--&gt;
+	 
+	 &lt;div class="popup__used-tech project-tech project-tech_fullwidth"&gt;
+	 
+	  &lt;h4 class="title title_small"&gt;Technologies:&lt;/h4&gt;
+      
+	  &lt;span class="icon icon_middle icon_rounded icon_rounded-black project-tech__icon icon-css3 lrmw_layer" data-show-delay="1600"
+                data-hide-delay="140" data-time="600" data-show-effect="rotateInUpRight" data-hide-effect="lightSpeedOut"&gt;&lt;/span&gt;	
+      	
+	 &lt;/div&gt;
+	 
+	 &lt;!-- Блок с ссылкой на демо--&gt;
+	 
+     &lt;div class="popup__demo-box"&gt;
+     
+      &lt;h4 class="title title_small"&gt;Demo:&lt;/h4&gt;
+      &lt;a href="#" class="popup__show-more"&gt;demo.site.com&lt;/a&gt;
+    
+	&lt;/div&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<p>Для попапа со статьей вы должны использовать следующий HTML:</p>
+				<pre class="code language-html">
+					<code>
+&lt;div id="blog-popup" class="popup popup-blog lrmw__popup"&gt;
+ &lt;span class="close-arrow popup__close_js"&gt;&lt;/span&gt;
+ &lt;div class="popup__inner"&gt;
+  &lt;div class="popup__layout"&gt;
+  
+  &lt;!--Шапка попапа--&gt;
+  
+   &lt;header class="popup__header box_blur lrmw_layer" data-show-delay="100" data-hide-delay="1000"
+           data-time="500" data-show-effect="fadeIn" data-hide-effect="fadeOut"&gt;
+    &lt;h3 class="title popup__title"&gt;
+     &lt;span class="popup__title-label lrmw_layer"  data-show-delay="600" data-hide-delay="450" data-time="500" data-show-effect="fadeInUp"
+           data-hide-effect="fadeOutDown"&gt;Title&lt;/span&gt;
+    &lt;/h3&gt;
+    &lt;img src="http://placehold.it/1200x800" class="responsive-img" alt="Title popup" /&gt;
+    &lt;div class="popup-blog__date lrmw_layer" data-show-delay="1200" data-hide-delay="300" data-time="500"
+           data-show-effect="fadeInRight" data-hide-effect="fadeOutRight"&gt;30 December, 2015&lt;/div&gt;
+   &lt;/header&gt;
+   
+   &lt;!-- Контент попапа--&gt;
+   
+   &lt;div class="popup__content"&gt;
+    &lt;div class="popup__description popup__description_fullwidth lrmw_layer" data-show-delay="200" data-hide-delay="600" data-time="500"
+         data-show-effect="fadeInLeft" data-hide-effect="fadeOutLeft"&gt;
+     &lt;p&gt;
+      ...
+     &lt;/p&gt;
+     &lt;p&gt;
+      &lt;img src="http://placehold.it/1200x800" class="responsive-img" alt="Title popup" /&gt; 
+     &lt;/p&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<p>
+					Вы можете изменять эффект появления, скорость, эффекты исчезновения и время исчезновения. 
+					Для этого у каждого элемента с классом lrmw_layer вы должны указать следующие параметры:
+				</p>
+				<ul class="dt-list">
+					<li><span class="dt-label">data-show-effect</span> - эффект появления</li>
+					<li><span class="dt-label">data-show-delay</span> - задержка перед началом анимации</li>
+					<li><span class="dt-label">data-hide-delay</span> -  задержка перед началом анимации исчезновения элемента</li>
+					<li><span class="dt-label">data-time</span> -  длительность анимации</li>
+					<li><span class="dt-label">data-hide-effect</span> -  эффект исчезновения</li>
+				</ul>
+				<p>Далее, созданный попап нужно добавить в блок с id="lrmw_overlay". В итоге у вас получится следующий результат:</p>
+				<pre class="code language-html">
+					<code>
+&lt;div id="lrmw_overlay" class="popup-overlay"&gt;
+ &lt;div id="mrt" class="popup lrmw__popup"&gt;
+  &lt;span class="close-arrow popup__close_js"&gt;&lt;/span&gt;
+  &lt;div class="popup__inner"&gt;
+   &lt;div class="popup__layout"&gt;
+  
+  &lt;!-- Шапка попапа--&gt;
+  
+   &lt;header class="popup__header box_blur lrmw_layer" data-show-delay="100" data-hide-delay="1000"
+           data-time="500" data-show-effect="fadeIn" data-hide-effect="fadeOut"&gt;
+    &lt;h3 class="title popup__title"&gt;
+     &lt;span class="popup__title-label lrmw_layer"  data-show-delay="600" data-hide-delay="450" data-time="500" data-show-effect="fadeInUp"
+           data-hide-effect="fadeOutDown"&gt;Title&lt;/span&gt;
+    &lt;/h3&gt;
+    &lt;img src="http://placehold.it/1200x800" class="responsive-img" alt="Title popup" /&gt;
+    &lt;div class="popup-blog__date lrmw_layer" data-show-delay="1200" data-hide-delay="300" data-time="500"
+           data-show-effect="fadeInRight" data-hide-effect="fadeOutRight"&gt;30 December, 2015&lt;/div&gt;
+   &lt;/header&gt;
+   
+    &lt;!-- Контент попапа--&gt;
+   
+    &lt;div class="popup__content"&gt;
+	
+	&lt;!-- Блок с описанием проекта--&gt;
+	
+    &lt;div class="popup__description popup__description_fullwidth lrmw_layer" data-show-delay="200" data-hide-delay="600" data-time="500"
+         data-show-effect="fadeInLeft" data-hide-effect="fadeOutLeft"&gt;
+      &lt;p&gt;...&lt;/p&gt;
+     &lt;/div&gt;
+	 
+     &lt;div class="popup__sidebar lrmw_layer" data-show-delay="400" data-hide-delay="600" data-time="500" data-show-effect="fadeInRight" 
+          data-hide-effect="fadeOutRight"&gt;
+		  
+	&lt;!-- Блок с технологиями --&gt;
+
+	 &lt;div class="popup__used-tech project-tech project-tech_fullwidth"&gt;
+	 
+	  &lt;h4 class="title title_small"&gt;Technologies:&lt;/h4&gt;
+      
+	  &lt;span class="icon icon_middle icon_rounded icon_rounded-black project-tech__icon icon-css3 lrmw_layer" data-show-delay="1600" 
+           data-hide-delay="140" data-time="600" data-show-effect="rotateInUpRight" data-hide-effect="lightSpeedOut"&gt;&lt;/span&gt;	
+
+	  &lt;/div&gt;
+	  
+      &lt;!--  Блок с ссылкой на демо--&gt;
+	  
+      &lt;div class="popup__demo-box"&gt;
+       &lt;h4 class="title title_small"&gt;Demo:&lt;/h4&gt;
+       &lt;a href="#" class="popup__show-more"&gt;demo.site.com&lt;/a&gt;
+      &lt;/div&gt;
+	  
+     &lt;/div&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>	
+				<h3>Список эффектов</h3>
+				<table>
+					<thead>
+						<tr>
+							<th colspan="4">Эффекты для появления</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>jump</td>
+							<td>impulse</td>
+							<td>jump</td>
+							<td>jumpIn</td>
+						</tr>
+						<tr>
+							<td>jumpInDown</td>
+							<td>jumpInLeft</td>
+							<td>jumpInRight</td>
+							<td>jumpInUp</td>
+						</tr>
+						<tr>
+							<td>jump</td>
+							<td>fadeIn</td>
+							<td>fadeInDown</td>
+							<td>fadeInDownBig</td>
+						</tr>
+						<tr>
+							<td>fadeInLeft</td>
+							<td>fadeInLeftBig</td>
+							<td>fadeInRight</td>
+							<td>fadeInRightBig</td>
+						</tr>
+						<tr>
+							<td>fadeInUp</td>
+							<td>fadeInUpBig</td>
+							<td>flipInX</td>
+							<td>flipInY</td>
+						</tr>
+						<tr>	
+							<td>lightSpeedIn</td>
+							<td>rotateIn</td>
+							<td>rotateInDownLeft</td>
+							<td>rotateInDownRight</td>
+						</tr>
+						<tr>
+							<td>rotateInUpLeft</td>
+							<td>rotateInUpRight</td>
+							<td>rollIn</td>
+							<td>zoomIn</td>
+						</tr>
+						<tr>
+							<td>zoomInDown</td>
+							<td>zoomInLeft</td>
+							<td>zoomInRight</td>
+							<td>zoomInUp</td>
+						</tr>
+						<tr>
+							<td>elastic</td>
+							<td>jitter</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<thead>
+					<tr>
+						<th colspan="4">Эффекты для исчезновения</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>shine</td>
+							<td>seesaw</td>
+							<td>wave</td>
+							<td>jumpOut</td>
+						</tr>
+						<tr>
+							<td>jumpOutDown</td>
+							<td>jumpOutLeft</td>
+							<td>jumpOutRight</td>
+							<td>jumpOutUp</td>
+						</tr>
+						<tr>
+							<td>fadeOut</td>
+							<td>fadeOutDown</td>
+							<td>fadeOutDownBig</td>
+							<td>fadeOutLeft</td>
+						</tr>
+						<tr>
+							<td>fadeOutLeftBig</td>
+							<td>fadeOutRight</td>
+							<td>fadeOutRightBig</td>
+							<td>fadeOutUp</td>
+						</tr>
+						<tr>
+							<td>fadeOutUpBig</td>
+							<td>flip</td>
+							<td>flipOutX</td>
+							<td>flipOutY</td>
+						</tr>
+						<tr>
+							<td>lightSpeedOut</td>
+							<td>rotateOut</td>
+							<td>rotateOutDownLeft</td>
+							<td>rotateOutDownRight</td>
+						</tr>
+						<tr>
+							<td>rotateOutUpLeft</td>
+							<td>rotateOutUpRight</td>
+							<td>hinge</td>
+							<td>rollOut</td>
+						</tr>
+						<tr>
+							<td>zoomOut</td>
+							<td>zoomOutDown</td>
+							<td>zoomOutLeft</td>
+							<td>zoomOutRight</td>
+						</tr>
+						<tr>
+							<td>zoomOutUp</td>
+						</tr>
+					</tbody>
+				</table>				
+			</section>	
+			<section id="video" class="dt-section">
+				<h2 class="dt-title">Инициализация фонового видео</h2>
+				<p>
+					Во-первых, вам обязательно нужно подключить файл jquery.youtubebackground.min.js. Во-вторых, после файла 
+					нужно инициализировать плагин и передать id видео, которые можно взять из url. 
+					Например, http://www.youtube.com/watch?v=videoID. В итоге у вас будет так: 
+					
+				</p>
+				<pre class="code language-html">
+					<code>
+&lt;script src="../../js/plugins/jquery.youtubebackground.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+ (function($){
+
+  $("#welcome").YTPlayer({
+	videoId: "0PYSlOutMNw",
+	pauseOnScroll: true
+  });
+
+ })(jQuery);
+&lt;/script&gt;
+					</code>
+				</pre>
+			</section>	
+			<section id="slider" class="dt-section">
+				<h2 class="dt-title">Инициализация фонового слайдера</h2>
+				<p>
+					Во-первых, вам обязательно нужно подключить файл vegas.min.js. Во-вторых, после файла нужно инициализировать плагин. В итоге у вас будет так: 
+					
+				</p>
+				<pre class="code language-html">
+					<code>
+&lt;script src="../../js/plugins/vegas.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+(function($){
+
+ $("#welcome").vegas({
+
+  animation : 'kenburnsDown',
+  timer: false,
+  slides: [
+   { src: "http://placehold.it/1920x1080" },
+   { src: "http://placehold.it/1920x1080" }
+  ]
+
+ });
+
+ })(jQuery);
+&lt;/script&gt;
+					</code>
+				</pre>
+			</section>	
+			<section id="effect-navigation" class="dt-section">
+				<h2 class="dt-title">Список эффектов для мобильного меню</h2>
+				<p>
+					HTML-структура мобильного меню:
+					
+				</p>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel"&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<p>Для добавления эффектов вам нужно добавить класс эффекта к .nav-panel. Например, для первого эффекта - .nav-panel_right-to-left. Так же замечу, что все готовые примеры находятся в папке navigation_effects.</p>
+				<h4>Эффект1</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_right-to-left"&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Эффект2</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_flip-left"&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Эффект3</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_flip-right"&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Эффект4</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_flip-center"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Эффект5</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_flip-center-inverse"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Эффект6</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_flip-top"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Эффект7</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_flip-top"&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Эффект8</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_flip-bottom"&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Эффект9</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_flip-bottom"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Эффект10</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_top-to-bottom"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Эффект11</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_right-to-left"&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Эффект12</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_bottom-to-top"&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Эффект13</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_bottom-to-top"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Эффект14</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_right-to-left"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Эффект15</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_left-to-right"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Эффект16</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_left-to-right"&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Эффект17</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_zoom-in"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>				
+				<h4>Эффект18</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_flip-left"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Эффект19</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_flip-right"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+			</section>	
+			<section id="preloaders" class="dt-section">
+				<h2 class="dt-title">Список прелоадеров</h2>
+				<p>Для использования прелоадеров вам нужно скопировать готовый HTML код и вставить его перед тегом body. Так же замечу, что все готовые примеры находятся в папке preloaders.</p>
+				
+				<h4>Прелоадер1</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="preloader box_blur preloader_js" data-class-overlay="overlay"&gt;
+ &lt;div class="mpc_preloader prelodader-animation_js"&gt;
+  &lt;div class="mpc_preloader_round mpc_preloader2"&gt;Loading&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>	
+				<h4>Прелоадер2</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="preloader box_blur preloader_js"&gt;
+ &lt;div class="mpc_preloader prelodader-animation_js"&gt;
+  &lt;div class="mpc_preloader_round mpc_preloader3"&gt;Loading&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>	
+				<h4>Прелоадер3</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="preloader box_blur preloader_js"&gt;
+ &lt;div class="mpc_preloader prelodader-animation_js"&gt;
+  &lt;div class="mpc_preloader_round mpc_preloader4"&gt;Loading&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;	
+					</code>
+				</pre>	
+				<h4>Прелоадер4</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="preloader box_blur preloader_js"&gt;
+ &lt;div class="mpc_preloader mpc_preloader5 prelodader-animation_js"&gt;
+  &lt;div class="mpc_preloader5_element"&gt;
+   &lt;div class="mpc_preloader5_rotator"&gt;
+    &lt;div class="mpc_preloader5_rotator_element"&gt;&lt;/div&gt;
+    &lt;div class="mpc_preloader5_rotator_element"&gt;&lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;	
+					</code>
+				</pre>	
+				<h4>Прелоадер5</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="preloader box_blur preloader_js"&gt;
+ &lt;div class="mpc_preloader mpc_preloader6 prelodader-animation_js"&gt;
+  &lt;div class="mpc_preloader6_element mpc_preloader6_element1"&gt; &lt;/div&gt;
+  &lt;div class="mpc_preloader6_element mpc_preloader6_element2"&gt; &lt;/div&gt;
+  &lt;div class="mpc_preloader6_element mpc_preloader6_element3"&gt; &lt;/div&gt;
+  &lt;div class="mpc_preloader6_element mpc_preloader6_element4"&gt; &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;	
+					</code>
+				</pre>	
+				<h4>Прелоадер6</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="preloader box_blur preloader_js"&gt;
+ &lt;div class="mpc_preloader prelodader-animation_js"&gt;
+  &lt;div class="mpc_preloader7"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;	
+					</code>
+				</pre>	
+				<h4>Прелоадер7</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="preloader box_blur preloader_js"&gt;
+ &lt;div class="mpc_preloader prelodader-animation_js"&gt;
+  &lt;div class="mpc_preloader8"&gt;
+   &lt;div class="mpc_preloader8_element"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;	
+					</code>
+				</pre>	
+				<h4>Прелоадер8</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="preloader box_blur preloader_js"&gt;
+ &lt;div class="mpc_preloader prelodader-animation_js"&gt;
+  &lt;div class="mpc_preloader9"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;	
+					</code>
+				</pre>	
+				<h4>Прелоадер9</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="preloader box_blur preloader_js"&gt;
+ &lt;div class="mpc_preloader prelodader-animation_js"&gt;
+  &lt;div class="mpc_preloader12"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;	
+					</code>
+				</pre>	
+				<h4>Прелоадер10</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="preloader box_blur preloader_js"&gt;
+ &lt;div class="mpc_preloader prelodader-animation_js"&gt;
+  &lt;div class="mpc_preloader13"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>		
+			<section id="mixins" class="dt-section">
+				<h2 class="dt-title">Вспомогательные миксины</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Название</th>
+							<th>Описание</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>.transition(@property, @time, @effect, @delay)</td>
+							<td>Миксин для кросбраузерной реализации свойства transition. @property – свойство для анимации; @time – время анимации; @effect – эффект анимации; @delay – задержка перед началом анимации.</td>
+						</tr>
+						<tr>
+							<td>.complex_transition(@property, @property2, @time, @effect, @delay)</td>
+							<td>Миксин для кросбраузерной реализации свойства transition с двумя свойствами. Настройки такие же как у миксина transition.</td>
+						</tr>
+						<tr>
+							<td>.translate(@x, @y)</td>
+							<td>Миксин для кроссбраузерной реализации свойства transform с значением translate.</td>
+						</tr>
+						<tr>
+							<td>.transform_scale(@x,@y,@value)</td>
+							<td>Миксин для кроссбраузерной реализации свойства transform с значениями translate и scale. @x - значение по оси Х; @y – значение по оси Y; @value – значения для свойства scale.</td>
+						</tr>
+						<tr>
+							<td>.absolute_middle_block()</td>
+							<td>Миксин для реализации абсолютного позиционирований по оси Y.</td>
+						</tr>
+						<tr>
+							<td>.absolute_center_horizonatal()</td>
+							<td>Миксин для реализации абсолютного позиционирований по оси X.</td>
+						</tr>
+						<tr>
+							<td>.absolute_center_block()</td>
+							<td>Миксин для реализации абсолютного позиционирований по осям Х и Y.</td>
+						</tr>
+						<tr>
+							<td>.transform_translate_rotateY(@x, @y, @value)</td>
+							<td>Миксин для кроссбраузерной реализации свойства transform с значениями translate и rotateY. @x - значение по оси Х; @y – значение по оси Y; @value – значения для свойства rotateY.</td>
+						</tr>
+						<tr>
+							<td>.transform_translate_rotateX(@x, @y, @value)</td>
+							<td>Миксин для кроссбраузерной реализации свойства transform с значениями translate и rotateX. @x - значение по оси Х; @y – значение по оси Y; @value – значения для свойства rotateX.</td>
+						</tr>
+						<tr>
+							<td>.transform_translate_rotate3d(@x, @y, @valueX, @valueY, @valueZ, @deg)</td>
+							<td>Миксин для кроссбраузерной реализации свойства transform с значениями translate и rotate3d. @x - значение по оси Х; @y – значение по оси Y; @valueX, @valueY, @valueZ – значения для указания оси, @deg - угол поворота.</td>
+						</tr>
+						<tr>
+							<td>.transform_rotate(@value)</td>
+							<td>Миксин для кроссбраузерной реализации свойства transform с значениями rotate. @value – угол поворта.</td>
+						</tr>
+						<tr>
+							<td>.transform_simple_scale(@value)</td>
+							<td>Миксин для кроссбраузерной реализации свойства transform с значениями scale. @value – коэффицент для свойства scale.</td>
+						</tr>
+						<tr>
+							<td>.transform_origin(@value1, @value2)</td>
+							<td>Миксин для кроссбраузерной реализации свойства transform-origin. @value1, @value2 –значения свойства. </td>
+						</tr>
+						<tr>
+							<td>.transform_style(@value)</td>
+							<td>Миксин для кроссбраузерной реализации свойства transform-style. @value - значение свойства.</td>
+						</tr>
+						<tr>
+							<td>.clear()</td>
+							<td>Миксин для очистки свойства float.</td>
+						</tr>
+						<tr>
+							<td>.bottom_line_decor()</td>
+							<td>Миксин для декоративного нижнего подчеркивания у заголовков и логотипа.</td>
+						</tr>
+						<tr>
+							<td>.flexbox()</td>
+							<td>Миксин для кроссбраузерной реализации flexbox.</td>
+						</tr>
+						<tr>
+							<td>.flexwrap(@value)</td>
+							<td>Миксин для кроссбраузерной реализации flex-wrap. @value - значение свойства.</td>
+						</tr>
+						<tr>
+							<td>.justify_content(@value)</td>
+							<td>Миксин для кроссбраузерной реализации justify-content. @value - значение свойства.</td>
+						</tr>
+						<tr>
+							<td>.align_items(@value)</td>
+							<td>Миксин для кроссбраузерной реализации align-items. @value - значение свойства.</td>
+						</tr>
+						<tr>
+							<td>.flex_direction(@value)</td>
+							<td>Миксин для кроссбраузерной реализации flex-direction. @value - значение свойства.</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="variables" class="dt-section">
+				<h2 class="dt-title">Вспомогательные переменные</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Название</th>
+							<th>Описание</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>@padding_section</td>
+							<td>Ввверхний и нижний отступ в секции.</td>
+						</tr>
+						<tr>
+							<td>@width_form_elements</td>
+							<td>Ширина элементов формы контактов. Значение по умолчанию - 89.6%.</td>
+						</tr>
+						<tr>
+							<td>@hover_animation_time</td>
+							<td>Длительность анимации при наведении на элемент портфолио. Значение по умолчанию - 0.5s.</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="plugins" class="dt-section">
+				<h2 class="dt-title">Список jQuery плагинов</h2>
+				<table>
+					<thead>
+					<tr>
+						<th>Название</th>
+						<th>Описание</th>
+					</tr>
+					</thead>
+						<tbody>
+						<tr>
+							<td>JQuery</td>
+							<td>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.</td>
+						</tr>
+						<tr id="magicLayout">
+							<td>Magic layout</td>
+							<td>I created a Jquery plugin that animates all page elements. To demonstrate its capabilities, I created this demo page as my portfolio. The main advantage of the plugin is its simple. You will need to connect the files and set need settings. For you available 36 effects, the ability to control the animation time. This plugin will help to make beautiful sites!</td>
+						</tr>
+						<tr id="layerPopup">
+							<td>Layered Responsive Modal Window</td>
+							<td>One of the most popular features of the website is a modal window. Modern developers pay little attention to them. Often Windows look awful, boring or don’t work. So we decided to create a unique component for modal dialogs! The result surprised us! Turned out so beautiful, interesting window. Now you can create the same. The only thing that can you can prevent this by you! Create, invent! Create individual Windows! Which is not on any website. Our component is suitable for lightbox. Your quality pictures will gain a new look! This you will surely enjoy.</td>
+						</tr>
+						<tr id="youtubebackground">
+							<td>jQuery.BackgroundVideo</td>
+							<td>A wrapper for the Youtube API - Great for fullscreen background videos or just regular videos.</td>
+						</tr>
+						<tr id="vegas">
+							<td>Vegas – Backgrounds and Slideshows</td>
+							<td>Vegas is a jQuery/Zepto plugin to add beautiful backgrounds and Slideshows to DOM elements.</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>		
+		</div>	
+		<aside class="dt-sidebar">
+			<div class="dt-sidebar__layout">
+				<h4 class="dt-sidebar__title">Navigation</h4>
+				<ul class="dt-menu dt-list">
+					<li><a href="#structure" class="dt-menu__link">Файловая структура</a></li>
+					<li><a href="#settings" class="dt-menu__link">Настройки</a></li>
+					<li>
+						<a href="#typography" class="dt-menu__link">Типографика</a>
+						<ul class="dt-list dt-list_nested">
+							<li><a href="#mixins-fonts" class="dt-menu__link">Миксины для работы с шрифтами</a></li>
+							<li><a href="#titles" class="dt-menu__link">Заголовки</a></li>
+						</ul>
+					</li>
+					<li><a href="#icons" class="dt-menu__link">Иконки</a></li>
+					<li>
+						<a href="#html" class="dt-menu__link">HTML-структура</a>
+						<ul class="dt-list dt-list_nested">
+							<li><a href="#welcome" class="dt-menu__link">HTML-структура блока "Welcome"</a></li>
+							<li><a href="#about" class="dt-menu__link">HTML-структура блока "About me"</a></li>
+							<li><a href="#skills" class="dt-menu__link">HTML-структура блока "Skills"</a></li>
+							<li><a href="#experience" class="dt-menu__link">HTML-структура блока "Experience"</a></li>
+							<li><a href="#stats" class="dt-menu__link">HTML-структура блока "Stats"</a></li>
+							<li><a href="#services" class="dt-menu__link">HTML-структура блока "Services"</a></li>
+							<li><a href="#blog" class="dt-menu__link">HTML-структура блока "My journal"</a></li>
+							<li><a href="#portfolio" class="dt-menu__link">HTML-структура блока "Portfolio"</a></li>
+							<li><a href="#contact" class="dt-menu__link">HTML-структура блока "Contact"</a></li>
+						</ul>						
+					</li>
+					<li><a href="#magicLayout" class="dt-menu__link">Инициализация плагина Title work для появления элементов</a></li>
+					<li><a href="#popup" class="dt-menu__link">Инициализация попапов</a></li>
+					<li><a href="#video" class="dt-menu__link">Инициализация фонового видео</a></li>
+					<li><a href="#slider" class="dt-menu__link">Инициализация фонового слайдера</a></li>
+					<li><a href="#effect-navigation" class="dt-menu__link">Список эффектов для мобильного меню</a></li>
+					<li><a href="#preloaders" class="dt-menu__link">Список прелоадеров</a></li>
+					<li><a href="#mixins" class="dt-menu__link">Вспомогательные миксины</a></li>
+					<li><a href="#variables" class="dt-menu__link">Вспомогательные переменные</a></li>
+					<li><a href="#plugins" class="dt-menu__link">Список jQuery плагинов</a></li>
+				</ul>
+			</div>
+		</aside>
+	</div>
+<script src="assets/rainbow-custom.min.js"></script> 
+</body>
+</html>

@@ -1,0 +1,56 @@
+
+.skills-display{
+	background: url("http://placehold.it/1920x1080") no-repeat center 50% @add_color_theme3;
+	background-size: cover;
+}
+
+.skills__column{
+	 
+	width: 45%;
+	margin-right: 5%;
+	
+	&:last-of-type{
+		margin-right: 0;
+		width: 50%;
+	}
+}
+
+.skills-bar__item{
+	
+	height: 5rem;
+	position: relative;
+	margin-bottom: 3rem;
+	overflow: hidden;
+	
+	&:last-of-type{
+		margin-bottom: 0;
+	}
+}
+
+.skill-bar{
+	height: 100%;
+	background-color: @color_theme_two;
+}
+
+.skill{
+	.absolute_middle_block();
+	color: @color_theme_one;
+	.font_700_s16();
+	margin-left: 2rem;
+}
+
+@media screen and (max-width: 860px){
+	
+	.skills{
+		.flexwrap(wrap);
+	}
+	
+	.skills__column, .skills__column:last-of-type{
+		width: 100%;
+		margin-right: 0;
+	}
+	
+	.skills-bar{
+		margin-top: 4rem;
+	}
+}

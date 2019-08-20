@@ -1,0 +1,2123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>RuPRO - One Page Responsive Resume Template</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="assets/style.css" />
+</head>
+<body>
+	<header class="dt-wrapper">
+		<div class="dt-container">
+			<h1 class="dt-logo">Ru<span class="dt-logo__dt-label">PRO</span> - One Page Responsive Resume Template</h1>
+		</div>
+	</header>
+	<div class="dt-container dt-content">
+		<div class="dt-main">
+			<div class="dt-section">
+				<p>By:Stas Melnikov</p>
+				<p>Email: <a href="mailto:melnik909@ya.ru">melnik909@ya.ru</a></p>
+				<p>Thank you for your purchase. If you have any questions, mail me to <a href="mailto:melnik909@ya.ru">melnik909@ya.ru</a></p>
+			</div>
+			<section id="structure" class="dt-section">
+				<h2 class="dt-title">File structure</h2>
+				<p>After unpacking archive, you'll see this structure:</p>
+				<pre class="code language-html">
+					<code>
+files/
+│ 
+├──css/
+│  ├─less/
+│  │  ├──bitter_dosis/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──merriweather_sans/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──roboto/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──raleway/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──source_sans_pro/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──color1/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──color2/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──color3/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──color4/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──color6/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──color7/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──color8/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──color9/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──color10/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  ├──color11/
+│  │  │  ├──main.less
+│  │  │  ├──settings.less
+│  │  │  └──main.css
+│  │  └──core/	
+│  │     ├──about_me.less
+│  │     ├──animate.less
+│  │     ├──blog.less
+│  │     ├──contact.less
+│  │     ├──form_elements.less
+│  │     ├──footer.less
+│  │     ├──grid.less
+│  │     ├──helpers.less
+│  │     ├──icons.less
+│  │     ├──logo.less
+│  │     ├──navigation.less
+│  │     ├──popup.less
+│  │     ├──portfolio.less
+│  │     ├──preloaders.less
+│  │     ├──services.less
+│  │     ├──skills.less
+│  │     ├──social.less
+│  │     ├──stats.less
+│  │     ├──style.less
+│  │     ├──timeline.less
+│  │     ├──titles.less
+│  │     ├──vegas.less
+│  │     ├──video.less
+│  │     └──welcome.less
+│  └──scss/ 
+├── icons
+├── pages/
+│  ├──bitter_dosis/
+│  │  ├──type1.html
+│  │  ├──type2.html
+│  │  ├──header_background_slider.html
+│  │  └──header_background_youtube_video.html
+│  ├──color/
+│  ├──merriweather_sans_font/
+│  │  ├──type1.html
+│  │  ├──type2.html
+│  │  ├──header_background_slider.html
+│  │  └──header_background_youtube_video.html
+│  ├──navigation_effects/
+│  │  ├──effect1.html 
+│  │  ...
+│  │  └──effect19.html
+│  ├──preloaders/
+│  │  ├──prelaoder1.html
+│  │  ...
+│  │  └──prelaoder10.html
+│  ├──raleway_font/
+│  │  ├──type1.html
+│  │  ├──type2.html
+│  │  ├──header_background_slider.html
+│  │  └──header_background_youtube_video.html
+│  ├──roboto_font/
+│  │  ├──type1.html
+│  │  ├──type2.html
+│  │  ├──header_background_slider.html
+│  │  └──header_background_youtube_video.html
+│  ├──source_sans_pro_font/
+│  │  ├──type1.html
+│  │  ├──type2.html
+│  │  ├──header_background_slider.html
+│  └──└──header_background_youtube_video.html
+└── js/
+    ├──plugins/
+    │  ├──jquery.youtubebackground.min.js
+    │  ├──layerPopup.min.js
+    │  ├──magicLayout.min.js
+    │  └──vegas.min.js
+    ├──jquery.js
+    └──main.js
+					</code>
+				</pre>
+				
+				<ul class="dt-list"> 
+					<li>
+						<span class="dt-label">CSS</span> - CSS styles
+						<ul class="dt-list dt-list_nested">
+							<li>
+								<span class="dt-label">less</span> - less files</li>
+								<ul class="dt-list dt-list_nested">
+									<li><span class="dt-label">bitter_dosis</span> - CSS styles with font "Dosis"</li>
+									<li><span class="dt-label">merriweather_sans</span> - CSS styles with font "Merriweather Sans"</li>
+									<li><span class="dt-label">roboto</span> - CSS styles with font "Roboto"</li>
+									<li><span class="dt-label">raleway</span> - CSS styles with font "Raleway"</li>
+									<li><span class="dt-label">source_sans_pro</span> - CSS styles with font "Source Sans Pro"</li>
+									<li><span class="dt-label">color1 - color11</span> - CSS styles for demonstration the color scheme</li>
+									<li>
+										<span class="dt-label">core</span> - CSS-styles of blocks
+										<ul class="dt-list dt-list_nested">
+											<li><span class="dt-label">about_me.less</span> - CSS for "About me" block</li>
+											<li><span class="dt-label">animate.less</span> - CSS animations for blocks</li>
+											<li><span class="dt-label">blog.less</span> - CSS for "Blog" block</li>
+											<li><span class="dt-label">contact.less</span> - CSS for block "Contact"</li>
+											<li><span class="dt-label">form_elements.less</span> - CSS for form elements</li>
+											<li><span class="dt-label">footer.less</span> - CSS for site's footer</li>
+											<li><span class="dt-label">grid.less</span> - CSS for carcass</li>
+											<li><span class="dt-label">helpers.less</span> - helping mixins</li>
+											<li><span class="dt-label">icons.less</span> - CSS for icons</li>
+											<li><span class="dt-label">logo.less</span> - CSS for logo</li>
+											<li><span class="dt-label">navigation.less</span> - CSS for navigation</li>
+											<li><span class="dt-label">popup.less</span> - CSS for popups</li>
+											<li><span class="dt-label">portfolio.less</span> - CSS for "Portfolio" block</li>
+											<li><span class="dt-label">preloaders.less</span> - CSS for preloaders animation</li>
+											<li><span class="dt-label">services.less</span> - CSS for "Services" block</li>
+											<li><span class="dt-label">skills.less</span> - CSS for "Skills" block</li>
+											<li><span class="dt-label">social.less</span> - CSS social networks elements</li>
+											<li><span class="dt-label">stats.less</span> - CSS for "Stats" block</li>
+											<li><span class="dt-label">style.less</span> - reset CSS styles</li>
+											<li><span class="dt-label">timeline.less</span> - CSS for block "Experrience"</li>
+											<li><span class="dt-label">titles.less</span> - CSS for titles</li>
+											<li><span class="dt-label">vegas.less</span> - CSS of Vegas plugin</li>
+											<li><span class="dt-label">video.less</span> - CSS of jQuery.BackgroundVideo plugin</li>
+											<li><span class="dt-label">welcome.less</span> - CSS for "Welcome" block</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span class="dt-label">scss</span> - scss files</li>
+							</li>
+						</ul>
+					</li>
+					<li><span class="dt-label">icons</span> - svg icons</li>
+					<li>
+						<span class="dt-label">pages</span> - prepared html pages
+						<ul class="dt-list dt-list_nested">
+							<li>
+								<span class="dt-label">bitter_dosis</span> - example with font "Dosis"
+								<ul class="dt-list dt-list_nested">
+									<li><span class="dt-label">type1.html</span> - first type of page</span></li>
+									<li><span class="dt-label">type2.html</span> - second type of page</li>
+									<li><span class="dt-label">header_background_slider.html</span> - example page with background slider</li>
+									<li><span class="dt-label">header_background_youtube_video.html</span> - example page with background video</li>
+								</ul>
+							</li>
+							<li>
+								<span class="dt-label">color</span> -  example pages with various colors(option - <a href="#add_color_theme">@add_color_theme</a>)
+								<ul class="dt-list dt-list_nested">
+									<li><span class="dt-label">type1_color1.html и type2_color1.html</span> - example with colour #a74752</li>
+									<li><span class="dt-label">type1_color2.html и type2_color2.html</span> - example with colour #f1c311</li>
+									<li><span class="dt-label">type1_color3.html и type2_color3.html</span> - example with colour #f4511e</li>
+									<li><span class="dt-label">type1_color4.html и type2_color4.html</span> - example with colour #42a5f5</li>
+									<li><span class="dt-label">type1_color5.html и type2_color5.html</span> - example with colour #26c6da</li>
+									<li><span class="dt-label">type1_color6.html и type2_color6.html</span> - example with colour #825333</li>
+									<li><span class="dt-label">type1_color7.html и type2_color7.html</span> - example with colour #513f66</li>
+									<li><span class="dt-label">type1_color8.html и type2_color8.html</span> - example with colour #9e715a</li>
+									<li><span class="dt-label">type1_color9.html и type2_color9.html</span> - example with colour #1f4b8e</li>
+									<li><span class="dt-label">type1_color10.html и type2_color10.html</span> - example with colour #f5a6b1</li>
+									<li><span class="dt-label">type1_color11.html и type2_color11.html</span> -example with colour #43bd8e</li>
+								</ul>
+							</li>
+							<li><span class="dt-label">merriweather_sans_font</span> - example with font "Merriweather Sans"</li>
+							<li><span class="dt-label">navigation_effects</span> - examples of effects for mobile version of navigation</li>
+							<li><span class="dt-label">preloaders</span> - examples of preloaders</li>
+							<li><span class="dt-label">raleway_font</span> - example with font "Raleway"</li>
+							<li><span class="dt-label">roboto_font</span> - example with font "Roboto"</li>
+							<li><span class="dt-label">source_sans_pro_font</span> - example with font "Source Sans Pro"</li>
+						</ul>
+					</li>
+					<li>
+						<span class="dt-label">js</span> - js scripts
+						<ul class="dt-list dt-list_nested">
+							<li>
+								<span class="dt-label">plugins</span> - used jQuery plugins
+								<ul class="dt-list dt-list_nested">
+									<li><span class="dt-label">jquery.youtubebackground.min.js</span> - video plugin</li>
+									<li><span class="dt-label">layerPopup.min.js</span> - popups plugin</li>
+									<li><span class="dt-label">magicLayout.min.js</span> - animation plugin</li>
+									<li><span class="dt-label">vegas.min.js</span> - slider plugin</li>
+								</ul>
+							</li>
+							<li><span class="dt-label">jquery.js</span> - jQuery library</li>
+							<li><span class="dt-label">main.js</span> - initialization file</li>
+						</ul>
+					 </li>
+				</ul>
+			</section>
+			<section id="settings" class="dt-section">
+				<h2 class="dt-title">Settings</h2>
+				<p>Settings can be found in the file 'settings'. For editing the settings you must use any compiler for LESS or SASS.</p>
+
+				<table>
+					<thead>
+					<tr>
+						<th>Variable names</th>
+						<th>Value</th>
+						<th>Description</th>
+					</tr>
+					</thead>
+						<tbody>
+						<tr>
+							<td>@color_theme_one</td>
+							<td>#000</td>
+							<td>Main colour</td>
+						</tr>
+						<tr>
+							<td>@color_theme_two</td>
+							<td>#fff</td>
+							<td>Main colour</td>
+						</tr>
+						<tr id="add_color_theme">
+							<td>@add_color_theme</td>
+							<td>#a74752</td>
+							<td>
+								Additional color. Available 11 colours. 
+								(#a74752, #f1c311, #f4511e, #42a5f5, #26c6da, #825333, #513f66, #9e715a, #1f4b8e, #f5a6b1, #43bd8e).
+							</td>
+						</tr>
+						<tr>
+							<td>@add_color_theme2</td>
+							<td>#eee</td>
+							<td>Additional color</td>
+						</tr>
+						<tr>
+							<td>@add_color_theme3</td>
+							<td>#ddd</td>
+							<td>Additional color</td>
+						</tr>
+						<tr>
+							<td>@color_theme_one_bg</td>
+							<td>rgba(0, 0, 0, 0.7)</td>
+							<td>Background colour for background images</td>
+						</tr>	
+						<tr>
+							<td>@font_family</td>
+							<td>'Raleway', sans-serif</td>
+							<td>The font used in the theme. There are 5 variants ('Raleway', sans-serif; 'Roboto', sans-serif; 'Merriweather Sans', sans-serif; 'Dosis', sans-serif; 'Source Sans Pro', sans-serif)</td>
+						</tr>						
+					</tbody>
+				</table>
+			</section>
+			<section id="typography" class="dt-section">
+				<h2 class="dt-title">Typography</h2>
+				<p>Here are using google fonts. Available fonts:</p>
+				<ul class="dt-list">
+					<li>https://fonts.googleapis.com/css?family=Bitter|Dosis:400,300,700"
+					<li>https://fonts.googleapis.com/css?family=Raleway:400,300,700</li>
+					<li>https://fonts.googleapis.com/css?family=Roboto:400,300,700</li>
+					<li>https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,700</li>
+					<li>https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700</li>
+				</ul>
+				<section id="mixins-fonts">
+					<h3 class="dt-title">Mixins for working with fonts</h3>
+					<p>In this theme I use this mixins for working with fonts:</p>
+					<table>
+						<thead>
+						<tr>
+							<th>Mixin name</th>
+							<th>Font-weight</th>
+							<th>Font-size</th>
+						</tr>
+						</thead>
+							<tbody>
+							<tr>
+								<td>.font_400_s28()</td>
+								<td>400</td>
+								<td>2.8 rem</td>
+							</tr>
+							<tr>
+								<td>.font_400_s24()</td>
+								<td>400</td>
+								<td>2.4rem</td>
+							</tr>
+							<tr>
+								<td>.font_400_s22()</td>
+								<td>400</td>
+								<td>2.2rem</td>
+							</tr>
+							<tr>
+								<td>.font_400_s16()</td>
+								<td>400</td>
+								<td>1.6rem</td>
+							</tr>
+							<tr>
+								<td>.font_400_s14()</td>
+								<td>400</td>
+								<td>1.4rem</td>
+							</tr>
+							<tr>
+								<td>.font_700_s80()</td>
+								<td>700</td>
+								<td>8rem</td>
+							</tr>
+							<tr>
+								<td>.font_700_s28()</td>
+								<td>700</td>
+								<td>2.8rem</td>
+							</tr>
+							<tr>
+								<td>.font_700_s24()</td>
+								<td>700</td>
+								<td>2.4rem</td>
+							</tr>
+							<tr>
+								<td>.font_700_s22()</td>
+								<td>700</td>
+								<td>2.2rem</td>
+							</tr>
+							<tr>
+								<td>.font_700_s18()</td>
+								<td>700</td>
+								<td>1.8rem</td>
+							</tr>
+							<tr>
+								<td>.font_700_s16()</td>
+								<td>700</td>
+								<td>1.6rem</td>
+							</tr>
+							<tr>
+								<td>.font_700_s14()</td>
+								<td>700</td>
+								<td>1.4rem</td>
+							</tr>
+							<tr>
+								<td>.font_300_s35()</td>
+								<td>300</td>
+								<td>3.5rem</td>
+							</tr>
+							<tr>
+								<td>.font_300_s28()</td>
+								<td>300</td>
+								<td>2.8rem</td>
+							</tr>
+							<tr>
+								<td>.font_300_s24()</td>
+								<td>300</td>
+								<td>2.4rem</td>
+							</tr>
+							<tr>
+								<td>.font_300_s16()</td>
+								<td>300</td>
+								<td>1.6rem</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section id="titles">
+					<h3 class="dt-title">Titles</h3>
+					<table>
+						<thead>
+						<tr>
+							<th>Class name</th>
+							<th>Size</th>
+						</tr>
+						</thead>
+							<tbody>
+							<tr>
+								<td>.title</td>
+								<td>.font_300_s35();</td>
+							</tr>
+							<tr>
+								<td>.title_middle</td>
+								<td>.font_300_s28();</td>
+							</tr>
+							<tr>
+								<td>.title_small</td>
+								<td>.font_700_s24();</td>
+							</tr>
+							<tr>
+								<td>.title_little</td>
+								<td>.font_700_s22();</td>
+							</tr>
+							<tr>
+								<td>.subtitle</td>
+								<td>.font_400_s16();</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</section>
+			<section id="icons" class="dt-section">
+				<h2 class="dt-title">Icons</h3>
+				<p>In this theme I use this classes for working with icons:</p>
+				<table>
+					<thead>
+					<tr>
+						<th>Class name</th>
+						<th>Description</th>
+					</tr>
+					</thead>
+						<tbody>
+						<tr>
+							<td>.icon</td>
+							<td>Main class. By default, icons have size 3rem.</td>
+						</tr>
+						<tr>
+							<td>.icon_middle</td>
+							<td>Class for displaying 2rem icons.</td>
+						</tr>
+						<tr>
+							<td>.icon_rounded</td>
+							<td>Class for displaying icons with borders.</td>
+						</tr>
+						<tr>
+							<td>.icon_rounded-hover</td>
+							<td>Class for effect when hovering on icon.</td>
+						</tr>
+						<tr>
+							<td>.icon_rounded-black</td>
+							<td>Class for displying icons in black circle.</td>
+						</tr>
+						<tr>
+							<td>.icon_rounded-crimson</td>
+							<td>Class for displying icons in dark red circle.</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="html" class="dt-section">
+				<h2 class="dt-title">HTML-structure</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+ &lt;head&gt;
+ 
+  &lt;!-- meta-information--&gt;
+ 
+  &lt;title&gt;RuPRO - One Page Responsive Resume Template&lt;/title&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;
+  
+   &lt;!-- attaching CSS--&gt;
+  
+  &lt;link rel="stylesheet" href="../../css/less/raleway/main.css" type="text/css"/&gt;
+  &lt;link href="https://fonts.googleapis.com/css?family=Raleway:400,300,700" rel="stylesheet"/&gt; 
+  
+ &lt;/head&gt;
+ &lt;/body&gt;
+
+  &lt;!-- attaching JS-scripts--&gt;
+
+ &lt;script src="../../js/jquery.js"&gt;&lt;/script&gt;
+ &lt;script src="../../js/plugins/magicLayout.min.js"&gt;&lt;/script&gt;
+ &lt;script src="../../js/plugins/layerPopup.min.js"&gt;&lt;/script&gt;
+ &lt;script src="../../js/main.js"&gt;&lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+					</code>
+				</pre>
+			</section>				
+			<section id="welcome" class="dt-section">
+				<h2 class="dt-title">HTML-structure of "Welcome" block</h2>
+				<pre class="code language-html">
+					<code>
+&lt;header id="welcome" class="header box_blur display_js"&gt;
+ &lt;div class="main-container main-container_fullheight"&gt;
+  &lt;div class="welcome"&gt;
+   &lt;h1 class="welcome__header"&gt;
+    &lt;span class="welcome__name layer" data-show-effect="fadeInDown" data-show-delay="500"&gt;I'am Bernard Balfour&lt;/span&gt;
+    &lt;span class="welcome__label layer" data-show-effect="fadeInUp" data-show-delay="500"&gt;
+     Front-end developer from Denmark
+    &lt;/span&gt;
+   &lt;/h1&gt;
+   &lt;div class="welcome__footer"&gt;
+    &lt;a href="#" class="welcome__link layer" data-show-effect="fadeInUp" data-show-delay="1000"&gt;download resume&lt;/a&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/header&gt;
+					</code>
+				</pre>
+			</section>			
+			<section id="about" class="dt-section">
+				<h2 class="dt-title">HTML-structure of "About me" block</h2>
+				<pre class="code language-html">
+					<code>
+&lt;section id="about" class="wrapper display_js"&gt;
+
+  &lt;div class="main-container main-container_padding"&gt;
+   
+   &lt;header class="main-container__header"&gt;
+    &lt;h2 class="title title_bottom-decor"&gt;About me&lt;/h2&gt;
+    &lt;div class="subtitle"&gt;Let me introduce myself&lt;/div&gt;
+   &lt;/header&gt;
+
+   &lt;div class="content about-me"&gt;
+    &lt;div class="about-me__layout layer" data-show-effect="fadeInLeft" data-show-delay="200"&gt;
+     &lt;div class="avatar"&gt;
+      &lt;img class="avatar__img responsive-img"  src="http://placehold.it/300x300" alt="Avatar"/&gt;
+     &lt;/div&gt;
+     &lt;div class="about-me__content"&gt;
+      ...
+     &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;section class="about-me__sidebar layer" data-show-effect="fadeInRight" data-show-delay="200"&gt;
+     &lt;h3 class="title title_middle about-me__title"&gt;PERSONAL &lt;span class="about-me__title-label"&gt;INFO&lt;/span&gt;&lt;/h3&gt;
+     &lt;div class="about-me__row"&gt;
+      &lt;div class="about-me__column"&gt;
+       &lt;div class="about-me__tag"&gt;Name&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="about-me__column"&gt;
+       &lt;div class="about-me__value"&gt;Bernard Balfour&lt;/div&gt;
+      &lt;/div&gt;
+     &lt;/div&gt;
+     ...
+    &lt;/div&gt;
+   &lt;/section&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+					</code>
+				</pre>
+			</section>	
+			<section id="skills" class="dt-section">
+				<h2 class="dt-title">HTML-structure of "Skills" block</h2>
+				<pre class="code language-html">
+					<code>
+&lt;section id="skills" class="wrapper box_blur skills-display display_js"&gt;
+ &lt;div class="main-container main-container_padding"&gt;
+  &lt;header class="main-container__header"&gt;
+   &lt;h2 class="title title_bottom-decor title_white"&gt;Skills&lt;/h2&gt;
+  &lt;/header&gt;
+  &lt;div class="content skills"&gt;
+   &lt;div class="skills__column layer" data-show-effect="fadeIn" data-show-delay="400"&gt;
+    ...
+   &lt;/div&gt;
+   &lt;div class="skills__column skills-bar"&gt;
+    &lt;div class="skills-bar__item"&gt;
+     &lt;div class="skill-bar layer skill-bar_js" data-show-effect="fadeInLeft" data-show-delay="200" data-skill-bar-width="90%"&gt;
+      &lt;div class="skill layer" data-show-effect="fadeIn" data-show-delay="1200"&gt;
+       &lt;span class="skill__name"&gt;HTML&lt;/span&gt;
+       &lt;span class="skill__value skill__value_js"&gt;&lt;/span&gt;
+      &lt;/div&gt;
+     &lt;/div&gt;
+    &lt;/div&gt;
+    ...
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+					</code>
+				</pre>
+				<h4>Description of specific classes and attributes for block</h4>
+				<ul class="dt-list">
+					<li><span class="dt-label">data-skill-bar-width</span> - value for 'progress bar' width</li>
+					<li><span class="dt-label">skill-bar_js</span> - class for requesting to calculate 'progress bar'</li>
+					<li><span class="dt-label">skill__value_js</span> - class for adding 'progress bar' value </li>
+				</ul>
+			</section>	
+			<section id="experience" class="dt-section">
+				<h2 class="dt-title">HTML-structure "Experience" block</h2>
+				<pre class="code language-html">
+					<code>
+&lt;section id="experience" class="wrapper display_js"&gt;
+ &lt;div class="main-container main-container_padding"&gt;
+  &lt;header class="main-container__header"&gt;
+   &lt;h2 class="title title_bottom-decor"&gt;Experience&lt;/h2&gt;
+   &lt;div class="subtitle"&gt;More about my experience&lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class="timeline"&gt;
+   &lt;div class="timeline__line layer" data-show-effect="fadeInDown" data-show-delay="0" data-time="2000"&gt;&lt;/div&gt;
+   &lt;div class="timeline__layout"&gt;
+    &lt;div class="timeline__dotted layer" data-show-effect="zoomIn" data-show-delay="500" data-time="300"&gt;&lt;/div&gt;
+     &lt;div class="timeline__inner timeline__time layer" data-show-effect="fadeIn" data-show-delay="900"&gt;
+     &lt;span class="timeline__date"&gt;2014 - 2015&lt;/span&gt;
+     &lt;span class="timeline__place-work"&gt;Web Studio "Name"&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;article class="timeline__inner timeline__content layer" data-show-effect="fadeInRight" data-show-delay="1000"&gt;
+     &lt;h3 class="title title_small timeline__title"&gt;Front-end developer&lt;/h3&gt;
+     &lt;div class="timeline__description"&gt;
+       ...
+     &lt;/div&gt;
+    &lt;/article&gt;
+   &lt;/div&gt;				
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+					</code>
+				</pre>
+			</section>
+			<section id="stats" class="dt-section">
+				<h2 class="dt-title">HTML-structure "Stats" block</h2>
+				<pre class="code language-html">
+					<code>
+&lt;section id="stats" class="wrapper stats-display box_blur display_js"&gt;
+ &lt;div class="main-container main-container_padding"&gt;
+  &lt;header class="main-container__header"&gt;
+   &lt;h2 class="title title_bottom-decor title_white"&gt;My stats&lt;/h2&gt;
+  &lt;/header&gt;
+  &lt;div class="content stats"&gt;
+   &lt;div class="stats__item layer" data-show-effect="zoomIn" data-show-delay="300"&gt;
+    &lt;i class="icon icon-thumbs-up stats__icon"&gt;&lt;/i&gt;
+    &lt;div class="stats__label"&gt;20+ projects done&lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+					</code>
+				</pre>
+			</section>	
+			<section id="services" class="dt-section">
+				<h2 class="dt-title">HTML-structure "Services" block</h2>
+				<pre class="code language-html">
+					<code>
+&lt;section id="services" class="wrapper display_js"&gt;
+ &lt;div class="main-container main-container_padding main-container_no-padding-bottom"&gt;
+  &lt;header class="main-container__header"&gt;
+   &lt;h2 class="title title_bottom-decor"&gt;Services&lt;/h2&gt;
+   &lt;div class="subtitle"&gt;What can I do for you&lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class="content services"&gt;
+   &lt;article class="service layer" data-show-effect="zoomIn" data-show-delay="0"&gt;
+    &lt;i class="icon icon_rounded icon_rounded-crimson icon-design service__icon"&gt;&lt;/i&gt;
+    &lt;header class="service__header"&gt;
+     &lt;h4 class="title title_small service__name"&gt;Title&lt;/h4&gt;
+    &lt;/header&gt;
+    &lt;div class="service__description"&gt;
+     ...
+    &lt;/div&gt;
+   &lt;/article&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+					</code>
+				</pre>
+			</section>	
+			<section id="portfolio" class="dt-section">
+				<h2 class="dt-title">HTML-structure "Portfolio" block</h2>
+				<p>
+					In "Portfolio" block there are two types of displaying information.
+				</p>
+				<h3>Content structure of type1.html:</h3>
+				<pre class="code language-html">
+					<code>
+&lt;section id="portfolio" class="wrapper portfolio display_js"&gt;
+ &lt;header class="portfolio__header"&gt;
+  &lt;h2 class="title title_bottom-decor"&gt;Portfolio&lt;/h2&gt;
+  &lt;div class="subtitle"&gt;My latest works&lt;/div&gt;
+ &lt;/header&gt;
+ &lt;div class="content list-works"&gt;
+ 
+  &lt;div class="list-works__column"&gt;
+  
+   &lt;a href="#" class="list-works__item list-works__item_big layer open-popup_js" data-show-effect="fadeIn" data-show-delay="100" data-id="he"&gt;
+    &lt;div class="list-works__wrap-img"&gt;
+     &lt;img src="http://placehold.it/960x960" class="responsive-img" alt="Work" /&gt;
+    &lt;/div&gt;	
+    &lt;div class="list-works__overlay"&gt; 
+     &lt;span class="list-works__name-project list-works__name-project_fade"&gt;Title work&lt;/span&gt;
+     &lt;span class="list-works__link-project"&gt;showmore&lt;/span&gt;
+    &lt;/div&gt;
+   &lt;/a&gt;
+   
+   &lt;a href="#" class="list-works__item layer open-popup_js" data-show-effect="fadeIn" data-show-delay="800" data-id="aa"&gt;
+    &lt;div class="list-works__wrap-img"&gt;
+     &lt;img src="http://placehold.it/480x480" class="responsive-img" alt="Work" /&gt;
+    &lt;/div&gt;
+    &lt;div class="list-works__overlay"&gt; 
+     &lt;span class="list-works__name-project list-works__name-project_fade"&gt;Title work&lt;/span&gt;
+     &lt;span class="list-works__link-project"&gt;showmore&lt;/span&gt;
+    &lt;/div&gt;
+   &lt;/a&gt;
+    ...
+  &lt;/div&gt;
+  
+  &lt;div class="list-works__column"&gt;
+    ...
+   &lt;a href="#" class="list-works__item layer open-popup_js" data-show-effect="fadeIn" data-show-delay="600" data-id="ml"&gt;
+    &lt;div class="list-works__wrap-img"&gt;
+     &lt;img src="http://placehold.it/480x480" class="responsive-img" alt="Work" /&gt;
+    &lt;/div&gt;
+    &lt;div class="list-works__overlay"&gt; 
+     &lt;span class="list-works__name-project list-works__name-project_fade"&gt;Title work&lt;/span&gt;
+     &lt;span class="list-works__link-project"&gt;showmore&lt;/span&gt;
+    &lt;/div&gt;
+   &lt;/a&gt;	
+   
+   &lt;a href="#" class="list-works__item list-works__item_big layer open-popup_js" data-show-effect="fadeIn" data-show-delay="700" data-id="lrmw"&gt;
+    &lt;div class="list-works__wrap-img"&gt;
+     &lt;img src="http://placehold.it/960x960" class="responsive-img" alt="Work" /&gt;
+    &lt;/div&gt;
+    &lt;div class="list-works__overlay"&gt; 
+     &lt;span class="list-works__name-project list-works__name-project_fade"&gt;Title work&lt;/span&gt;
+     &lt;span class="list-works__link-project"&gt;showmore&lt;/span&gt;
+    &lt;/div&gt;
+   &lt;/a&gt;
+  &lt;/div&gt;
+
+ &lt;/div&gt;
+&lt;/section&gt;
+					</code>
+				</pre>
+				<p>
+					Content part is divided into two columns in which you can add elements.
+				</p>				
+				<h4>Description of  specific classes and attributes for the block</h4>
+				<ul class="dt-list">
+					<li><span class="dt-label">.list-works__item</span> - standart class for displaying with 50% of column width. </li>
+					<li><span class="dt-label">.list-works__item_big</span> - standart class for displaying with 100% of column width. </li>
+				</ul>
+				
+				<h3>Content structure of type2.html:</h3>
+				<pre class="code language-html">
+					<code>
+&lt;div class="list-works list-works_visible-description-yes"&gt;
+ &lt;div class="list-works__element"&gt;
+ 
+ &lt;!-- project images--&gt;
+ 
+  &lt;div class="list-works__wrap-img list-works__wrap-img_blur layer" data-show-effect="fadeInLeft" data-show-delay="0" data-time="500"&gt;
+   &lt;svg class="list-works__blur-svg"&gt;
+   
+   &lt;!-- unique id for filter tag--&gt;
+   
+    &lt;filter id="blur"&gt; 
+     &lt;feComponentTransfer&gt;
+      &lt;feFuncR type="gamma" amplitude=".3" exponent=".99" /&gt;
+      &lt;feFuncG type="gamma" amplitude=".3" exponent=".99"  /&gt;
+      &lt;feFuncB type="gamma" amplitude=".3" exponent=".99" /&gt;
+     &lt;/feComponentTransfer&gt;
+     &lt;feColorMatrix values="0" type="saturate" /&gt;
+    &lt;/filter&gt;
+	
+	&lt;!-- in attribute 'filter' add 'id'--&gt;
+	
+    &lt;image x="0" y="0" width="100%" height="100%" filter="url(#blur)" xlink:href="http://placehold.it/960x960" /&gt;
+   &lt;/svg&gt;
+   &lt;img src="http://placehold.it/960x960" class="responsive-img" alt="Work" /&gt;
+  &lt;/div&gt;
+  
+  &lt;!-- description of project--&gt;
+  
+  &lt;div class="list-works__description"&gt;
+   &lt;h3 class="title list-works__name-project layer" data-show-effect="fadeInDown" data-show-delay="500" data-time="300"&gt;Title work&lt;/h3&gt;
+   &lt;div class="list-works__content layer" data-show-effect="fadeIn" data-show-delay="700"&gt;
+    ...
+   &lt;/div&gt;
+   &lt;footer class="list-works__footer"&gt;
+   
+   &lt;!-- block with used technologies--&gt;
+   
+    &lt;div class="project-tech layer" data-show-effect="fadeIn" data-show-delay="800"&gt;
+	
+     &lt;h4 class="title title_little title_bold title_text-transform-no project-tech__title"&gt;Technologies:&lt;/h4&gt;
+     &lt;span class="icon icon_middle icon_rounded icon_rounded-black icon-html5 project-tech__icon layer" data-show-effect="zoomIn"
+           data-time="300" data-show-delay="1200"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+	 
+    &lt;a href="#" class="list-works__show-project layer" data-show-effect="fadeInUp" data-time="300" data-show-delay="800"&gt;Show Project&lt;/a&gt;
+   
+   &lt;/footer&gt;
+  &lt;/div&gt;
+  
+  ...
+  
+ &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<p>
+					For creating effects you must use 'svg'. In options you must set uniq id for tag < filter >. And in attribute 'filter' set id value
+				</p>
+			</section>	
+			<section id="blog" class="dt-section">
+				<h2 class="dt-title">HTML-structure "My journal" block</h2>
+				<pre class="code language-html">
+					<code>
+&lt;section id="blog" class="wrapper display_js"&gt;
+ &lt;div class="main-container main-container_padding main-container_no-padding-bottom"&gt;
+  &lt;header class="main-container__header"&gt;
+   &lt;h2 class="title title_bottom-decor"&gt;MY JOURNAL&lt;/h2&gt;
+   &lt;div class="subtitle"&gt;My latest news&lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class="content blog"&gt;
+  
+  &lt;!-- post without image--&gt;
+  
+   &lt;article class="blog__column post post_footer-yes layer" data-show-effect="flipInY" data-time="2000" data-show-delay="0"&gt;
+    &lt;div class="post__layout"&gt;
+     &lt;h4 class="title title_little post__title"&gt;
+	  &lt;a href="#" class="open-popup_js" data-id="blog-popup"&gt;LOREM IPSUM DOLOR SIT AMET&lt;/a&gt;
+     &lt;/h4&gt;
+     &lt;div class="post__description"&gt;
+      ...
+     &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;footer class="post__footer"&gt;
+     &lt;span class="post__date"&gt;30 December, 2015&lt;/span&gt;
+    &lt;/footer&gt;
+   &lt;/article&gt;
+  
+  &lt;!-- post with image--&gt;
+     
+   &lt;article class="blog__column post layer" data-show-effect="flipInY"  data-time="2000" data-show-delay="100"&gt;
+    &lt;header class="post__header"&gt;
+     &lt;img src="http://placehold.it/480x320" class="responsive-img post__img open-popup_js" data-id="blog-popup" alt="LOREM IPSUM"/&gt;
+     &lt;span class="post__date post__date_absolute"&gt;30 November, 2015&lt;/span&gt;
+    &lt;/header&gt;
+    &lt;div class="post__layout"&gt;
+     &lt;h4 class="title title_little post__title"&gt;
+      &lt;a href="#" class="open-popup_js" data-id="blog-popup"&gt;LOREM IPSUM DOLOR SIT AMET&lt;/a&gt;
+     &lt;/h4&gt;
+     &lt;div class="post__description"&gt;
+      ...
+     &lt;/div&gt;
+    &lt;/div&gt;
+   &lt;/article&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+					</code>
+				</pre>
+			</section>					
+			<section id="contact" class="dt-section">
+				<h2 class="dt-title">HTML-structure "Contact" block</h2>
+				<pre class="code language-html">
+					<code>
+&lt;section id="contact" class="wrapper display_js"&gt;
+ &lt;div class="main-container main-container_padding"&gt;
+  &lt;header class="main-container__header"&gt;
+   &lt;h2 class="title title_bottom-decor"&gt;Contact&lt;/h2&gt;
+   &lt;div class="subtitle"&gt;Get in touch&lt;/div&gt;
+  &lt;/header&gt;
+  &lt;form class="contact-form"&gt;
+   &lt;div class="contact-form__item layer"  data-show-effect="fadeInLeft" data-show-delay="400"&gt;
+    &lt;i class="icon icon-user contact-form__icon"&gt;&lt;/i&gt;
+    &lt;input class="text-field" placeholder="Your name" name="username" required/&gt;
+   &lt;/div&gt;
+   &lt;div class="contact-form__item layer"  data-show-effect="fadeInRight" data-show-delay="500"&gt;
+    &lt;i class="icon icon-mail contact-form__icon"&gt;&lt;/i&gt;
+    &lt;input class="text-field" type="email" placeholder="Your email" name="email" required/&gt;
+   &lt;/div&gt;
+   &lt;div class="contact-form__item layer"  data-show-effect="fadeInLeft" data-show-delay="600"&gt;
+    &lt;i class="icon icon-message contact-form__icon"&gt;&lt;/i&gt;
+    &lt;textarea class="text-field textarea" placeholder="Your message" name="message" required&gt;&lt;/textarea&gt;
+   &lt;/div&gt;
+   &lt;button class="button contact-form__button layer"  data-show-effect="fadeInRight" data-show-delay="700"&gt;
+    &lt;span class="button__label"&gt;Send&lt;/span&gt;
+   &lt;/button&gt;  &lt;/form&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+					</code>
+				</pre>
+			</section>		
+			<section id="magicLayout" class="dt-section">
+				<h2 class="dt-title">Initialization plugin for appearing elements.</h2>
+				<p>
+					First, you need to attach magicLayout.min.js and main.js.
+					Next, you must add class 'layer' to initializing element, and set his value for next attributes.
+					<ul class="dt-list">
+						<li><span class="dt-label">data-show-effect</span> - effect of the appearance</li>
+						<li><span class="dt-label">data-show-delay</span> - delay before starting animation</li>
+						<li><span class="dt-label">data-time</span> - duration of animation. You may don't set it, then animation will lasts 1000ms.</li>
+					</ul>
+				</p>
+				<p>For example,</p>
+				<pre class="code language-html">
+					<code>
+&lt;header id="welcome" class="header box_blur display_js"&gt;
+ &lt;div class="main-container main-container_fullheight"&gt;
+  &lt;div class="welcome"&gt;
+   &lt;h1 class="welcome__header"&gt;
+    &lt;span class="welcome__name layer" data-show-effect="fadeInDown" data-show-delay="500"&gt;I'am Bernard Balfour&lt;/span&gt;
+    &lt;span class="welcome__label layer" data-show-effect="fadeInUp" data-show-delay="500"&gt;
+     Front-end developer from Denmark
+    &lt;/span&gt;
+   &lt;/h1&gt;
+   &lt;div class="welcome__footer"&gt;
+    &lt;a href="#" class="welcome__link layer" data-show-effect="fadeInUp" data-show-delay="1000"&gt;download resume&lt;/a&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/header&gt;
+					</code>
+				</pre>
+				<h3>List of effects</h3>
+				<table>
+					<thead>
+						<tr>
+							<th colspan="4">Effects for the appearance</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>jump</td>
+							<td>impulse</td>
+							<td>jump</td>
+							<td>jumpIn</td>
+						</tr>
+						<tr>
+							<td>jumpInDown</td>
+							<td>jumpInLeft</td>
+							<td>jumpInRight</td>
+							<td>jumpInUp</td>
+						</tr>
+						<tr>
+							<td>jump</td>
+							<td>fadeIn</td>
+							<td>fadeInDown</td>
+							<td>fadeInDownBig</td>
+						</tr>
+						<tr>
+							<td>fadeInLeft</td>
+							<td>fadeInLeftBig</td>
+							<td>fadeInRight</td>
+							<td>fadeInRightBig</td>
+						</tr>
+						<tr>
+							<td>fadeInUp</td>
+							<td>fadeInUpBig</td>
+							<td>flipInX</td>
+							<td>flipInY</td>
+						</tr>
+						<tr>	
+							<td>lightSpeedIn</td>
+							<td>rotateIn</td>
+							<td>rotateInDownLeft</td>
+							<td>rotateInDownRight</td>
+						</tr>
+						<tr>
+							<td>rotateInUpLeft</td>
+							<td>rotateInUpRight</td>
+							<td>rollIn</td>
+							<td>zoomIn</td>
+						</tr>
+						<tr>
+							<td>zoomInDown</td>
+							<td>zoomInLeft</td>
+							<td>zoomInRight</td>
+							<td>zoomInUp</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>	
+			<section id="popup" class="dt-section">
+				<h2 class="dt-title">Popup initialization</h2>
+				<p>
+					First, you must attach layerPopup.min.js and main.js. Then, you need to add class 'open-popup_js' to initializing element, and set values for next attributes.
+					<ul class="dt-list">
+						<li><span class="dt-label">data-show-effect</span> - effect of the appearance</li>
+						<li><span class="dt-label">data-show-delay</span> - delaying beforstarting animation</li>
+						<li><span class="dt-label">data-id</span> - id of popup window</li>
+					</ul>
+				</p>
+				<p>For example,</p>
+				<pre class="code language-html">
+					<code>
+&lt;a href="#" class="list-works__item layer open-popup_js" data-show-effect="fadeIn" data-show-delay="1000" data-id="mrt"&gt;...&lt;/a&gt;
+					</code>
+				</pre>
+				<p>Next, you need to create popup. For working with popup, you'll use this HTML:</p>
+				<pre class="code language-html">
+					<code>
+&lt;div id="mrt" class="popup lrmw__popup"&gt;
+ &lt;span class="close-arrow popup__close_js"&gt;&lt;/span&gt;
+ &lt;div class="popup__inner"&gt;
+  &lt;div class="popup__layout"&gt;
+  
+  &lt;!-- Popup header--&gt;
+  
+   &lt;header class="popup__header box_blur lrmw_layer" data-show-delay="500"
+           data-hide-delay="900" data-time="500" data-show-effect="fadeIn" data-hide-effect="fadeOut"&gt;    
+    &lt;h3 class="title popup__title"&gt;
+     &lt;span class="popup__title-label lrmw_layer"  data-show-delay="900" data-hide-delay="450"
+           data-time="500" data-show-effect="lightSpeedIn" data-hide-effect="seesaw"&gt;Title&lt;/span&gt;
+    &lt;/h3&gt;
+    &lt;img src="http://placehold.it/1200x500" class="responsive-img" alt="Title popup" /&gt;
+   &lt;/header&gt;
+   
+    &lt;!-- Popup content--&gt;
+   
+   &lt;div class="popup__content"&gt;
+   
+   &lt;!-- Block with description of the project--&gt;
+   
+    &lt;div class="popup__description lrmw_layer" data-show-delay="200" data-hide-delay="600" data-time="500" data-show-effect="fadeInLeft"
+         data-hide-effect="fadeOutLeft"&gt;
+     &lt;p&gt;...&lt;/p&gt;
+    &lt;/div&gt;
+	
+    &lt;div class="popup__sidebar lrmw_layer" data-show-delay="400" data-hide-delay="600" data-time="500" data-show-effect="fadeInRight"
+         data-hide-effect="fadeOutRight"&gt;
+	 &lt;!-- Block with technologies--&gt;
+	 
+	 &lt;div class="popup__used-tech project-tech project-tech_fullwidth"&gt;
+	 
+	  &lt;h4 class="title title_small"&gt;Technologies:&lt;/h4&gt;
+      
+	  &lt;span class="icon icon_middle icon_rounded icon_rounded-black project-tech__icon icon-css3 lrmw_layer" data-show-delay="1600"
+                data-hide-delay="140" data-time="600" data-show-effect="rotateInUpRight" data-hide-effect="lightSpeedOut"&gt;&lt;/span&gt;	      	
+	 &lt;/div&gt;
+	 
+	 &lt;!-- Block with demo link--&gt;
+	 
+     &lt;div class="popup__demo-box"&gt;
+     
+      &lt;h4 class="title title_small"&gt;Demo:&lt;/h4&gt;
+      &lt;a href="#" class="popup__show-more"&gt;demo.site.com&lt;/a&gt;
+    
+	&lt;/div&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<p>For popup with article, you must use next HTML:</p>
+				<pre class="code language-html">
+					<code>
+&lt;div id="blog-popup" class="popup popup-blog lrmw__popup"&gt;
+ &lt;span class="close-arrow popup__close_js"&gt;&lt;/span&gt;
+ &lt;div class="popup__inner"&gt;
+  &lt;div class="popup__layout"&gt;
+  
+  &lt;!--Popup header--&gt;
+  
+   &lt;header class="popup__header box_blur lrmw_layer" data-show-delay="100" data-hide-delay="1000"
+           data-time="500" data-show-effect="fadeIn" data-hide-effect="fadeOut"&gt;
+    &lt;h3 class="title popup__title"&gt;
+     &lt;span class="popup__title-label lrmw_layer"  data-show-delay="600" data-hide-delay="450" data-time="500" data-show-effect="fadeInUp"
+           data-hide-effect="fadeOutDown"&gt;Title&lt;/span&gt;
+    &lt;/h3&gt;
+    &lt;img src="http://placehold.it/1200x800" class="responsive-img" alt="Title popup" /&gt;
+    &lt;div class="popup-blog__date lrmw_layer" data-show-delay="1200" data-hide-delay="300" data-time="500"
+           data-show-effect="fadeInRight" data-hide-effect="fadeOutRight"&gt;30 December, 2015&lt;/div&gt;
+   &lt;/header&gt;
+   
+   &lt;!-- Popup content--&gt;
+   
+   &lt;div class="popup__content"&gt;
+    &lt;div class="popup__description popup__description_fullwidth lrmw_layer" data-show-delay="200" data-hide-delay="600" data-time="500"
+         data-show-effect="fadeInLeft" data-hide-effect="fadeOutLeft"&gt;
+     &lt;p&gt;
+      ...
+     &lt;/p&gt;
+     &lt;p&gt;
+      &lt;img src="http://placehold.it/1200x800" class="responsive-img" alt="Title popup" /&gt; 
+     &lt;/p&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<p>
+					You can change effect of appearance, speed, effects of disappearance and time of disappearance. 
+					For this, you must set these parameters on every element with  class 'lrmw_layer'.
+				</p>
+				<ul class="dt-list">
+					<li><span class="dt-label">data-show-effect</span> -effect of appearance</li>
+					<li><span class="dt-label">data-show-delay</span> - delay before starting animation</li>
+					<li><span class="dt-label">data-hide-delay</span> -  delay before starting animation of disappearance element</li>
+					<li><span class="dt-label">data-time</span> -  duration of animation</li>
+					<li><span class="dt-label">data-hide-effect</span> -  effect of disappearance</li>
+				</ul>
+				<p>Now, need to add created popup to block with id="lrmw_overlay". So, we'll get this result:</p>
+				<pre class="code language-html">
+					<code>
+&lt;div id="lrmw_overlay" class="popup-overlay"&gt;
+ &lt;div id="mrt" class="popup lrmw__popup"&gt;
+  &lt;span class="close-arrow popup__close_js"&gt;&lt;/span&gt;
+  &lt;div class="popup__inner"&gt;
+   &lt;div class="popup__layout"&gt;
+  
+  &lt;!-- Popup header--&gt;
+  
+   &lt;header class="popup__header box_blur lrmw_layer" data-show-delay="100" data-hide-delay="1000"
+           data-time="500" data-show-effect="fadeIn" data-hide-effect="fadeOut"&gt;
+    &lt;h3 class="title popup__title"&gt;
+     &lt;span class="popup__title-label lrmw_layer"  data-show-delay="600" data-hide-delay="450" data-time="500" data-show-effect="fadeInUp"
+           data-hide-effect="fadeOutDown"&gt;Title&lt;/span&gt;
+    &lt;/h3&gt;
+    &lt;img src="http://placehold.it/1200x800" class="responsive-img" alt="Title popup" /&gt;
+    &lt;div class="popup-blog__date lrmw_layer" data-show-delay="1200" data-hide-delay="300" data-time="500"
+           data-show-effect="fadeInRight" data-hide-effect="fadeOutRight"&gt;30 December, 2015&lt;/div&gt;
+   &lt;/header&gt;
+   
+    &lt;!-- Popup content--&gt;
+   
+    &lt;div class="popup__content"&gt;
+	
+	&lt;!-- Block with description of project--&gt;
+	
+    &lt;div class="popup__description popup__description_fullwidth lrmw_layer" data-show-delay="200" data-hide-delay="600" data-time="500"
+         data-show-effect="fadeInLeft" data-hide-effect="fadeOutLeft"&gt;
+      &lt;p&gt;...&lt;/p&gt;
+     &lt;/div&gt;
+	 
+     &lt;div class="popup__sidebar lrmw_layer" data-show-delay="400" data-hide-delay="600" data-time="500" data-show-effect="fadeInRight" 
+          data-hide-effect="fadeOutRight"&gt;
+
+	&lt;!-- Block with technologies --&gt;
+
+	 &lt;div class="popup__used-tech project-tech project-tech_fullwidth"&gt;
+	 
+	  &lt;h4 class="title title_small"&gt;Technologies:&lt;/h4&gt;
+      
+	  &lt;span class="icon icon_middle icon_rounded icon_rounded-black project-tech__icon icon-css3 lrmw_layer" data-show-delay="1600" 
+           data-hide-delay="140" data-time="600" data-show-effect="rotateInUpRight" data-hide-effect="lightSpeedOut"&gt;&lt;/span&gt;
+	  &lt;/div&gt;
+	  
+      &lt;!--  Block with demo link--&gt;
+	  
+      &lt;div class="popup__demo-box"&gt;
+       &lt;h4 class="title title_small"&gt;Demo:&lt;/h4&gt;
+       &lt;a href="#" class="popup__show-more"&gt;demo.site.com&lt;/a&gt;
+      &lt;/div&gt;
+	  
+     &lt;/div&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>	
+				<h3>List of effects</h3>
+				<table>
+					<thead>
+						<tr>
+							<th colspan="4">Effects for appearance</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>jump</td>
+							<td>impulse</td>
+							<td>jump</td>
+							<td>jumpIn</td>
+						</tr>
+						<tr>
+							<td>jumpInDown</td>
+							<td>jumpInLeft</td>
+							<td>jumpInRight</td>
+							<td>jumpInUp</td>
+						</tr>
+						<tr>
+							<td>jump</td>
+							<td>fadeIn</td>
+							<td>fadeInDown</td>
+							<td>fadeInDownBig</td>
+						</tr>
+						<tr>
+							<td>fadeInLeft</td>
+							<td>fadeInLeftBig</td>
+							<td>fadeInRight</td>
+							<td>fadeInRightBig</td>
+						</tr>
+						<tr>
+							<td>fadeInUp</td>
+							<td>fadeInUpBig</td>
+							<td>flipInX</td>
+							<td>flipInY</td>
+						</tr>
+						<tr>	
+							<td>lightSpeedIn</td>
+							<td>rotateIn</td>
+							<td>rotateInDownLeft</td>
+							<td>rotateInDownRight</td>
+						</tr>
+						<tr>
+							<td>rotateInUpLeft</td>
+							<td>rotateInUpRight</td>
+							<td>rollIn</td>
+							<td>zoomIn</td>
+						</tr>
+						<tr>
+							<td>zoomInDown</td>
+							<td>zoomInLeft</td>
+							<td>zoomInRight</td>
+							<td>zoomInUp</td>
+						</tr>
+						<tr>
+							<td>elastic</td>
+							<td>jitter</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<thead>
+					<tr>
+						<th colspan="4">effects for disappearance</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>shine</td>
+							<td>seesaw</td>
+							<td>wave</td>
+							<td>jumpOut</td>
+						</tr>
+						<tr>
+							<td>jumpOutDown</td>
+							<td>jumpOutLeft</td>
+							<td>jumpOutRight</td>
+							<td>jumpOutUp</td>
+						</tr>
+						<tr>
+							<td>fadeOut</td>
+							<td>fadeOutDown</td>
+							<td>fadeOutDownBig</td>
+							<td>fadeOutLeft</td>
+						</tr>
+						<tr>
+							<td>fadeOutLeftBig</td>
+							<td>fadeOutRight</td>
+							<td>fadeOutRightBig</td>
+							<td>fadeOutUp</td>
+						</tr>
+						<tr>
+							<td>fadeOutUpBig</td>
+							<td>flip</td>
+							<td>flipOutX</td>
+							<td>flipOutY</td>
+						</tr>
+						<tr>
+							<td>lightSpeedOut</td>
+							<td>rotateOut</td>
+							<td>rotateOutDownLeft</td>
+							<td>rotateOutDownRight</td>
+						</tr>
+						<tr>
+							<td>rotateOutUpLeft</td>
+							<td>rotateOutUpRight</td>
+							<td>hinge</td>
+							<td>rollOut</td>
+						</tr>
+						<tr>
+							<td>zoomOut</td>
+							<td>zoomOutDown</td>
+							<td>zoomOutLeft</td>
+							<td>zoomOutRight</td>
+						</tr>
+						<tr>
+							<td>zoomOutUp</td>
+						</tr>
+					</tbody>
+				</table>				
+			</section>	
+			<section id="video" class="dt-section">
+				<h2 class="dt-title">Initialization of background video</h2>
+				<p>
+					First, you must attach jquery.youtubebackground.min.js. Then, need to initialize plugin and give id to video, which may get from url.
+					For example,  http://www.youtube.com/watch?v=videoID. Result will be like this:
+				</p>
+				<pre class="code language-html">
+					<code>
+&lt;script src="../../js/plugins/jquery.youtubebackground.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+ (function($){
+
+  $("#welcome").YTPlayer({
+	videoId: "0PYSlOutMNw",
+	pauseOnScroll: true
+  });
+
+ })(jQuery);
+&lt;/script&gt;
+					</code>
+				</pre>
+			</section>	
+			<section id="slider" class="dt-section">
+				<h2 class="dt-title">Initialization of background slider</h2>
+				<p>
+					At first, you'll need to attach vegas.min.js. Then, need to initialize plugin. And result will be: 
+					
+				</p>
+				<pre class="code language-html">
+					<code>
+&lt;script src="../../js/plugins/vegas.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+(function($){
+
+ $("#welcome").vegas({
+
+  animation : 'kenburnsDown',
+  timer: false,
+  slides: [
+   { src: "http://placehold.it/1920x1080" },
+   { src: "http://placehold.it/1920x1080" }
+  ]
+
+ });
+
+ })(jQuery);
+&lt;/script&gt;
+					</code>
+				</pre>
+			</section>	
+			<section id="effect-navigation" class="dt-section">
+				<h2 class="dt-title">List of effects for mobile menu</h2>
+				<p>
+					HTML-structure of mobile menu:
+					
+				</p>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel"&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<p>If you want to add effect, need to add class of effect to '.nav-panel'. For example, for first effect - .nav-panel_right-to-left. As well, I note, that all ready examples you'll find in folder 'navigation_effects'.</p>
+				<h4>Effect1</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_right-to-left"&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Effect2</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_flip-left"&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Effect3</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_flip-right"&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Effect4</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_flip-center"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Effect5</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_flip-center-inverse"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Effect6</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_flip-top"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Effect7</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_flip-top"&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Effect8</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_flip-bottom"&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Effect9</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_flip-bottom"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Effect10</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_top-to-bottom"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Effect11</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_right-to-left"&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Effect12</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_bottom-to-top"&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Effect13</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_bottom-to-top"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Effect14</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_right-to-left"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Effect15</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_left-to-right"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Effect16</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_left-to-right"&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Effect17</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_zoom-in"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>				
+				<h4>Effect18</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_flip-left"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				<h4>Effect19</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="nav-panel nav-panel_fullwidth nav-panel_flip-right"&gt;
+ &lt;span class="close-arrow close-arrow_black mobile-menu-close_js"&gt;&lt;/span&gt;
+ &lt;header class="nav-panel__header logo logo_bottom-decor"&gt;
+  &lt;span class="logo__item"&gt;Bernard&lt;/span&gt;
+  &lt;span class="logo__item logo__item_bold"&gt;Balfour&lt;/span&gt;
+  &lt;span class="logo__label"&gt;Front-end developer&lt;/span&gt;
+ &lt;/header&gt;
+ &lt;div class="nav-panel__content"&gt;
+  &lt;nav class="nav nav-panel__layout"&gt;
+   &lt;a href="#welcome" class="nav-panel__link init-scroll_js" data-scroll-nav="0" data-id-section="welcome"&gt;
+    &lt;i class="icon icon-home nav-panel__icon"&gt;&lt;/i&gt;
+    Home
+   &lt;/a&gt;
+    ...
+   &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+			</section>	
+			<section id="preloaders" class="dt-section">
+				<h2 class="dt-title">List of preloaders</h2>
+				<p>For using preloaders, you need to copy ready HTML code and paste it before tag 'body'. All ready examples you'll find in folder 'preloaders'.</p>
+				
+				<h4>Preloader1</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="preloader box_blur preloader_js" data-class-overlay="overlay"&gt;
+ &lt;div class="mpc_preloader prelodader-animation_js"&gt;
+  &lt;div class="mpc_preloader_round mpc_preloader2"&gt;Loading&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>	
+				<h4>Preloader2</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="preloader box_blur preloader_js"&gt;
+ &lt;div class="mpc_preloader prelodader-animation_js"&gt;
+  &lt;div class="mpc_preloader_round mpc_preloader3"&gt;Loading&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>	
+				<h4>Preloader3</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="preloader box_blur preloader_js"&gt;
+ &lt;div class="mpc_preloader prelodader-animation_js"&gt;
+  &lt;div class="mpc_preloader_round mpc_preloader4"&gt;Loading&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;	
+					</code>
+				</pre>	
+				<h4>Preloader4</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="preloader box_blur preloader_js"&gt;
+ &lt;div class="mpc_preloader mpc_preloader5 prelodader-animation_js"&gt;
+  &lt;div class="mpc_preloader5_element"&gt;
+   &lt;div class="mpc_preloader5_rotator"&gt;
+    &lt;div class="mpc_preloader5_rotator_element"&gt;&lt;/div&gt;
+    &lt;div class="mpc_preloader5_rotator_element"&gt;&lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;	
+					</code>
+				</pre>	
+				<h4>Preloader5</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="preloader box_blur preloader_js"&gt;
+ &lt;div class="mpc_preloader mpc_preloader6 prelodader-animation_js"&gt;
+  &lt;div class="mpc_preloader6_element mpc_preloader6_element1"&gt; &lt;/div&gt;
+  &lt;div class="mpc_preloader6_element mpc_preloader6_element2"&gt; &lt;/div&gt;
+  &lt;div class="mpc_preloader6_element mpc_preloader6_element3"&gt; &lt;/div&gt;
+  &lt;div class="mpc_preloader6_element mpc_preloader6_element4"&gt; &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;	
+					</code>
+				</pre>	
+				<h4>Preloader6</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="preloader box_blur preloader_js"&gt;
+ &lt;div class="mpc_preloader prelodader-animation_js"&gt;
+  &lt;div class="mpc_preloader7"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;	
+					</code>
+				</pre>	
+				<h4>Preloader7</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="preloader box_blur preloader_js"&gt;
+ &lt;div class="mpc_preloader prelodader-animation_js"&gt;
+  &lt;div class="mpc_preloader8"&gt;
+   &lt;div class="mpc_preloader8_element"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;	
+					</code>
+				</pre>	
+				<h4>Preloader8</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="preloader box_blur preloader_js"&gt;
+ &lt;div class="mpc_preloader prelodader-animation_js"&gt;
+  &lt;div class="mpc_preloader9"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;	
+					</code>
+				</pre>	
+				<h4>Preloader9</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="preloader box_blur preloader_js"&gt;
+ &lt;div class="mpc_preloader prelodader-animation_js"&gt;
+  &lt;div class="mpc_preloader12"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;	
+					</code>
+				</pre>	
+				<h4>Preloader10</h4>
+				<pre class="code language-html">
+					<code>
+&lt;div class="preloader box_blur preloader_js"&gt;
+ &lt;div class="mpc_preloader prelodader-animation_js"&gt;
+  &lt;div class="mpc_preloader13"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>		
+			<section id="mixins" class="dt-section">
+				<h2 class="dt-title">Additional mixins</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>.transition(@property, @time, @effect, @delay)</td>
+							<td>Mixin for cross browser realisation of 'transition'. @property – attribute for animation; @time – duration of animation; @effect – animation effect; @delay – delay before starting animation.</td>
+						</tr>
+						<tr>
+							<td>.complex_transition(@property, @property2, @time, @effect, @delay)</td>
+							<td>Mixin for cross browser realisation of 'transition' with 2 attributes. Settings are same as 'transition' mixin.</td>
+						</tr>
+						<tr>
+							<td>.translate(@x, @y)</td>
+							<td>Mixin for cross browser realisation of 'transform' wth 'translate' value.</td>
+						</tr>
+						<tr>
+							<td>.transform_scale(@x,@y,@value)</td>
+							<td>Mixin for cross browser realisation of 'transform'with 'translate' and 'scale' values. @x - value on X-axis; @y –value on Y-axis; @value – value for attribute 'scale'.</td>
+						</tr>
+						<tr>
+							<td>.absolute_middle_block()</td>
+							<td>Mixin for realisation absolute positioning on the Y-axis.</td>
+						</tr>
+						<tr>
+							<td>.absolute_center_horizonatal()</td>
+							<td>Mixin for realisation absolute positioning on the X-axis.</td>
+						</tr>
+						<tr>
+							<td>.absolute_center_block()</td>
+							<td>Mixin for realisation absolute positioning on the Y-axis and X-axis.</td>
+						</tr>
+						<tr>
+							<td>.transform_translate_rotateY(@x, @y, @value)</td>
+							<td>Mixin for cross browser realisation of 'transform'with 'translate' and 'rotateY' values. @x - value on X-axis; @y – value on Y-axis; @value – value for attribute 'rotateY'.</td>
+						</tr>
+						<tr>
+							<td>.transform_translate_rotateX(@x, @y, @value)</td>
+							<td>Mixin for cross browser realisation of 'transform' with 'translate' and 'rotateX'. @x - value on X-axis; @y – value on Y-axis; @value – value for attribute 'rotateX'.</td>
+						</tr>
+						<tr>
+							<td>.transform_translate_rotate3d(@x, @y, @valueX, @valueY, @valueZ, @deg)</td>
+							<td>Mixin for cross browser realisation of 'transform' with 'translate' and 'rotate3d'. @x - value on X-axis; @y – value on Y-axis; @valueX, @valueY, @valueZ – value for setting the axis, @deg - angle of rotation.</td>
+						</tr>
+						<tr>
+							<td>.transform_rotate(@value)</td>
+							<td>Mixin for cross browser realisation of 'transform' with 'rotate' value. @value – angle of rotation.</td>
+						</tr>
+						<tr>
+							<td>.transform_simple_scale(@value)</td>
+							<td>Mixin for cross browser realisation of 'transform' with 'scale' value. @value – coefficient for attribute 'scale'.</td>
+						</tr>
+						<tr>
+							<td>.transform_origin(@value1, @value2)</td>
+							<td>Mixin for cross browser realisation of 'transform-origin'. @value1, @value2 – value of attribute. </td>
+						</tr>
+						<tr>
+							<td>.transform_style(@value)</td>
+							<td>Mixin for cross browser realisation of 'transform-style'. @value - value of attribute.</td>
+						</tr>
+						<tr>
+							<td>.clear()</td>
+							<td>Mixin for clearing attribute 'float'</td>
+						</tr>
+						<tr>
+							<td>.bottom_line_decor()</td>
+							<td>Mixin for decorative underscore in titles and logo</td>
+						</tr>
+						<tr>
+							<td>.flexbox()</td>
+							<td>Mixin for cross browser realisation of 'flexbox'.</td>
+						</tr>
+						<tr>
+							<td>.flexwrap(@value)</td>
+							<td>Mixin for cross browser realisation of 'flex-wrap'. @value - value of attribute.</td>
+						</tr>
+						<tr>
+							<td>.justify_content(@value)</td>
+							<td>Mixin for cross browser realisation of 'justify-content'. @value - value of attribute.</td>
+						</tr>
+						<tr>
+							<td>.align_items(@value)</td>
+							<td>Mixin for cross browser realisation of 'align-items'. @value - value of attribute.</td>
+						</tr>
+						<tr>
+							<td>.flex_direction(@value)</td>
+							<td>Mixin for cross browser realisation of 'flex-direction'. @value - value of attribute.</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="variables" class="dt-section">
+				<h2 class="dt-title">Additional variables</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>@padding_section</td>
+							<td>Upper and lower indent in section</td>
+						</tr>
+						<tr>
+							<td>@width_form_elements</td>
+							<td>Width of elements of contacts form. By default, value is 89.6% </td>
+						</tr>
+						<tr>
+							<td>@hover_animation_time</td>
+							<td>Duration of animation while hovering at portfolio element. By default, value is 0.5s.</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="plugins" class="dt-section">
+				<h2 class="dt-title">List of jQuery plugins</h2>
+				<table>
+					<thead>
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+					</tr>
+					</thead>
+						<tbody>
+						<tr>
+							<td>JQuery</td>
+							<td>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.</td>
+						</tr>
+						<tr id="magicLayout">
+							<td>Magic layout</td>
+							<td>I created a Jquery plugin that animates all page elements. To demonstrate its capabilities, I created this demo page as my portfolio. The main advantage of the plugin is its simple. You will need to connect the files and set need settings. For you available 36 effects, the ability to control the animation time. This plugin will help to make beautiful sites!</td>
+						</tr>
+						<tr id="layerPopup">
+							<td>Layered Responsive Modal Window</td>
+							<td>One of the most popular features of the website is a modal window. Modern developers pay little attention to them. Often Windows look awful, boring or don’t work. So we decided to create a unique component for modal dialogs! The result surprised us! Turned out so beautiful, interesting window. Now you can create the same. The only thing that can you can prevent this by you! Create, invent! Create individual Windows! Which is not on any website. Our component is suitable for lightbox. Your quality pictures will gain a new look! This you will surely enjoy.</td>
+						</tr>
+						<tr id="youtubebackground">
+							<td>jQuery.BackgroundVideo</td>
+							<td>A wrapper for the Youtube API - Great for fullscreen background videos or just regular videos.</td>
+						</tr>
+						<tr id="vegas">
+							<td>Vegas – Backgrounds and Slideshows</td>
+							<td>Vegas is a jQuery/Zepto plugin to add beautiful backgrounds and Slideshows to DOM elements.</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>					
+		</div>	
+		<aside class="dt-sidebar">
+			<div class="dt-sidebar__layout">
+				<h4 class="dt-sidebar__title">Navigation</h4>
+				<ul class="dt-menu dt-list">
+					<li><a href="#structure" class="dt-menu__link">File structure</a></li>
+					<li><a href="#settings" class="dt-menu__link">Settings</a></li>
+					<li>
+						<a href="#typography" class="dt-menu__link">Typography</a>
+						<ul class="dt-list dt-list_nested">
+							<li><a href="#mixins-fonts" class="dt-menu__link">Mixins for working with fonts</a></li>
+							<li><a href="#titles" class="dt-menu__link">Titles</a></li>
+						</ul>
+					</li>
+					<li><a href="#icons" class="dt-menu__link">Icons</a></li>
+					<li>
+						<a href="#html" class="dt-menu__link">HTML-structure</a>
+						<ul class="dt-list dt-list_nested">
+							<li><a href="#welcome" class="dt-menu__link">HTML-structure of "Welcome" block</a></li>
+							<li><a href="#about" class="dt-menu__link">HTML-structure "About me block"</a></li>
+							<li><a href="#skills" class="dt-menu__link">HTML-structure of "Skills" block</a></li>
+							<li><a href="#experience" class="dt-menu__link">HTML-structure of "Experience" block</a></li>
+							<li><a href="#stats" class="dt-menu__link">HTML-structure of "Stats" block</a></li>
+							<li><a href="#services" class="dt-menu__link">HTML-structure of "Services" block</a></li>
+							<li><a href="#blog" class="dt-menu__link">HTML-structure of "My journal" block</a></li>
+							<li><a href="#portfolio" class="dt-menu__link">HTML-structure of "Portfolio" block</a></li>
+							<li><a href="#contact" class="dt-menu__link">HTML-structure of "Contact" block</a></li>
+						</ul>						
+					</li>
+					<li><a href="#magicLayout" class="dt-menu__link">Initialization of of Title work plugin for appearing elements.</a></li>
+					<li><a href="#popup" class="dt-menu__link">Initialization of popups</a></li>
+					<li><a href="#video" class="dt-menu__link">Initialization of background video</a></li>
+					<li><a href="#slider" class="dt-menu__link">Initialization of background sider</a></li>
+					<li><a href="#effect-navigation" class="dt-menu__link">List of effects for mobile menu</a></li>
+					<li><a href="#preloaders" class="dt-menu__link">List of preloaders</a></li>
+					<li><a href="#mixins" class="dt-menu__link">Additional mixins</a></li>
+					<li><a href="#variables" class="dt-menu__link">Additional variables</a></li>
+					<li><a href="#plugins" class="dt-menu__link">List of jQuery plugins</a></li>
+				</ul>
+			</div>
+		</aside>
+	</div>
+<script src="assets/rainbow-custom.min.js"></script> 
+</body>
+</html>

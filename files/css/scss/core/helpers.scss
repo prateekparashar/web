@@ -1,0 +1,128 @@
+
+@mixin transition($property, $time, $effect, $delay){
+	-webkit-transition: $property $time $effect $delay;
+	transition: $property $time $effect $delay;
+}
+
+@mixin complex_transition($property, $property2, $time, $effect, $delay){
+
+	-webkit-transition-property: $property, $property2;	
+	transition-property: $property, $property2;
+	
+	-webkit-transition-duration: $time;
+	transition-duration: $time;
+	
+	 -webkit-transition-timing-function: $effect;
+	transition-timing-function: $effect;
+	
+	-webkit-transition-delay: $delay;
+	transition-delay: $delay;
+}
+
+@mixin translate($x, $y){
+	-webkit-transform: translateZ(0px) translate($x, $y);
+	transform: translateZ(0px) translate($x, $y);
+} 
+
+@mixin transform_scale($x, $y, $value){ 
+	-webkit-transform: translateZ(0) translate($x, $y) scale($value);
+	transform: translateZ(0) translate($x, $y) scale($value);
+}
+
+@mixin absolute_middle_block(){
+	position: absolute;
+	top: 50%;
+	@include translate(0, -50%);
+}
+
+@mixin absolute_center_horizonatal(){
+	position: absolute;
+	left: 50%;
+	@include translate(-50%, 0);
+}
+
+@mixin absolute_center_block(){
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	@include translate(-50%, -50%);
+}
+
+@mixin transform_translate_rotateY($x, $y, $value){ 
+	-webkit-transform: translateZ(0) translate($x, $y) rotateY($value);
+	transform: translateZ(0) translate($x, $y) rotateY($value);
+}
+
+@mixin transform_translate_rotateX($x, $y, $value){ 
+	-webkit-transform: translateZ(0) translate($x, $y) rotateX($value);
+	transform: translateZ(0) translate($x, $y) rotateX($value);
+}
+
+@mixin transform_translate_rotate3d($x, $y, $valueX, $valueY, $valueZ, $deg){ 
+	-webkit-transform: translateZ(0) translate($x, $y) rotate3d($valueX, $valueY, $valueZ, $deg);
+	transform: translateZ(0) translate($x, $y) rotate3d($valueX, $valueY, $valueZ, $deg);
+}
+
+@mixin transform_rotate($value){ 
+	-webkit-transform: rotate($value);
+	transform: rotate($value);
+}
+
+@mixin transform_simple_scale($value){ 
+	-webkit-transform: scale($value);
+	transform: scale($value); 
+}
+
+@mixin transform_origin($value1, $value2){
+	-webkit-transform-origin: $value1 $value2;
+	transform-origin: $value1 $value2;
+}
+
+@mixin transform_style($value){
+	-webkit-transform-style: $value;
+	transform-style: $value;
+}
+
+@mixin clear(){
+	content: "";
+	display: block;
+	clear: both;
+}
+
+@mixin bottom_line_decor(){
+	
+	width: 50px;
+	height: 2px;
+	background-color: $color_theme_one;
+	
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	@include translate(-50%, 0);	
+}
+
+@mixin flexbox(){
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+
+@mixin flexwrap($value){
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+@mixin justify_content($value){
+	-webkit-justify-content: $value;
+	justify-content: $value;
+}
+
+@mixin align_items($value){
+	-webkit-align-items: $value;
+	align-items: $value;
+}
+
+@mixin flex_direction($value){
+	-webkit-flex-direction: $value;
+	flex-direction: $value;
+}

@@ -1,0 +1,9 @@
+/*
+ *social
+ */
+
+.social_right{
+	float: right;
+	text-align: right;
+	@include font_700_s16()
+}

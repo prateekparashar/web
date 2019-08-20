@@ -1,0 +1,35 @@
+
+.logo{
+	.font_300_s24();
+	color: @color_theme_one;
+	text-transform: none;	
+}
+
+.logo_bottom-decor{
+
+    margin-bottom: 1.5rem;
+	
+	&:after{
+		content: "";
+		display: block;
+		.bottom_line_decor();
+	}
+}
+
+.logo__item{
+	display: inline-block;
+}
+
+.logo__item_bold{
+	font-weight: bold;
+}
+
+.logo_left{
+	float: left;
+}
+ 
+.logo__label{
+	.font_400_s14();
+	color: @add_color_theme;
+	display: block;
+}

@@ -1,0 +1,55 @@
+
+.stats-display{
+	background: url("http://placehold.it/1920x1080") no-repeat center 50% @add_color_theme3;
+	background-size: cover;
+}
+
+.stats{
+	.justify_content(center);
+}
+
+.stats__item{
+	
+	width: 23%;
+	margin-right: 2%;
+	text-align: center;
+	
+	&:last-of-type{
+		margin-right: 0;
+	}
+}
+
+@stats_icon_size: 6rem;
+
+.stats__icon{
+	
+	width: @stats_icon_size;
+	height: @stats_icon_size;
+	margin-bottom: 3rem;
+	
+	&:before{
+		font-size: @stats_icon_size;
+	}
+}
+
+@media screen and (max-width: 360px){
+
+
+	.stats{
+		.flexwrap(wrap);
+	}
+	
+	.stats__item{
+		
+		width: 48%;
+		margin-bottom: 4.5rem;
+		
+		&:nth-of-type(even){
+			margin-right: 0;
+		}
+		
+		&:nth-of-type(3), &:nth-of-type(4){
+			margin-bottom: 0;
+		}
+	}
+}

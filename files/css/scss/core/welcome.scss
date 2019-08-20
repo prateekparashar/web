@@ -1,0 +1,65 @@
+
+.header{
+
+	height: 100vh;
+	background: url("http://placehold.it/1920x1080") no-repeat center 50%;
+	background-size: cover;	
+    overflow: hidden;
+}
+
+.header_no-bg{
+	background: none;
+}
+
+.welcome{
+
+	color: $color_theme_two;
+	width: 100%;
+	text-align: center;
+	@include absolute_center_block();
+}
+
+.welcome__header{
+	line-height: 8rem;
+}
+
+.welcome__name{
+	display: block;
+	@include font_700_s80();
+	text-shadow: 0.1rem 0.1rem 1rem $color_theme_one;
+	letter-spacing: 0.8rem;
+}
+
+.welcome__label{
+	display: inline-block;
+	@include font_300_s16();
+	font-size: 1.6rem;
+	letter-spacing: 0.2rem;
+}
+
+.welcome__link{
+	
+	@include font_400_s14();
+	color: $color_theme_two;	
+	
+	padding: .5rem 0;
+	display: inline-block;
+	margin: 0 1.5rem;
+    border-bottom: 1px dashed $color_theme_two;
+	
+	&:hover{
+		
+		background-color: $color_theme_two;
+		color: $color_theme_one;
+		border-color: transparent;
+		
+		margin: 0 .5rem;
+		padding: .5rem 1rem;
+		
+		@include transition(background-color, .5s, ease-out, 0s);
+	}
+}
+
+@media screen and (max-width: 700px){
+	max-height: 667px;
+}

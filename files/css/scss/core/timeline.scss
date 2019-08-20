@@ -1,0 +1,166 @@
+
+.timeline{
+	position: relative;
+	overflow: hidden;
+} 
+ 
+.timeline__layout{
+	position: relative;
+	@include flexbox();
+	padding: 1.3rem 0;
+}
+
+.timeline__line{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 22%;
+	width: 3px;
+	height: 100%;
+	background-color: $color_theme_one;
+}
+
+$timeline_dotted_size: 1rem;
+
+.timeline__dotted{
+
+	width: $timeline_dotted_size;
+	height: $timeline_dotted_size;
+	
+	border: .2rem solid $color_theme_one;
+	border-radius: 50%;
+	background-color: $color_theme_two;
+	
+	position: absolute;
+	top: 5.5rem;
+	left: 21.6%;
+}
+
+.timeline__time{
+
+	width: 20%;
+	text-align: right;
+	margin-right: 5%;
+	
+	@include flexbox();
+	@include flexwrap(wrap);
+	align-content: center;
+}
+
+$timeline_content_arrow_size: 0;
+
+.timeline__content{
+
+	border-left: .5rem solid $add_color_theme;
+	background-color: $add_color_theme2;
+	
+	position: relative;
+	padding: 2rem 2.5rem;
+	width: 71%;
+	box-sizing: border-box;
+	
+	&:before{
+	
+		content: "";
+		display: block;
+		width: $timeline_content_arrow_size;
+		height: $timeline_content_arrow_size;
+		
+		border: .5rem solid $add_color_theme;
+		border-top-color: transparent;
+		border-right-color: transparent;
+		
+		position: absolute;
+		top: 5rem;
+		@include transform_translate_rotate3d(0, -50%, 0, 0, -45, -45deg);
+		left: -0.9rem;
+	}
+}
+
+.timeline__date{
+	display: block;
+	@include font_700_s24();
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+.timeline__place-work{
+	width: 100%;
+	@include font_400_s14();
+	color: $add_color_theme;
+}
+
+.timeline__title{
+	text-transform: none;
+	margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 980px){
+
+	.timeline__layout{
+		@include flexwrap(wrap);
+	}
+
+	.timeline__line{
+		left: 5px;
+	}
+
+	.timeline__dotted{
+		left: 2px;
+		top: 70px;
+	}
+	
+	.timeline__time{
+	
+		width: 90%; 
+		margin: 0 0 1rem 5%;
+		text-align: left;
+		
+		align-items: center;
+		@include flexwrap(nowrap);
+	}
+	
+	.timeline__date, .timeline__place-work{
+		width: auto;
+	} 
+	
+	.timeline__date{
+		margin-right: .5rem;
+		margin-bottom: 0;
+	}
+	
+	.timeline__content{
+	
+		width: 90%;
+		margin: 0 0 0 5%;
+		
+		&:before{
+			top: 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 480px){
+
+	.timeline__line{
+		display: none;
+	}
+
+	.timeline__layout{
+		padding: 0 0 2rem;
+	}
+	
+	.timeline__dotted{
+		display: none;
+	}
+	
+	.timeline__content{
+	
+		width: 100%;
+		margin: 0;
+		
+		&:before{
+			display: none;
+		}
+	}	
+}

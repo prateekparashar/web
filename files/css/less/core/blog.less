@@ -1,0 +1,157 @@
+.blog{
+	.flexwrap(wrap);
+}
+
+.blog__column{
+
+	width: 23%;
+	
+	&:nth-of-type(4n+2){
+		margin-left: 2%;
+		margin-right: 1%;
+	}
+	
+	&:nth-of-type(4n+3){
+		margin-right: 2%;
+		margin-left: 1%;
+	}
+} 
+
+.post{
+	background-color: @add_color_theme2;
+	box-sizing: border-box;
+	.font_400_s14();
+	margin-top: 1.9vw;
+	
+	&:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4){
+		margin-top: 0;
+	}
+	
+	&:last-of-type{
+		margin-bottom: 0;
+	}
+}
+ 
+.post_footer-yes{
+	.post__layout{
+		padding-bottom: 7rem;
+	}
+}
+ 
+.post__header{
+	position: relative;
+	font-size: 0;
+}
+ 
+.post__layout{
+	border-top: 5px solid @add_color_theme;
+	padding: 1.5rem 2.5rem;
+}
+
+.post__footer{
+	
+	border-top: 2px solid @add_color_theme3;
+	.font_700_s14();
+	box-sizing: border-box;
+	width: 100%;
+	
+	position: absolute;
+	bottom: 0;
+	
+	padding: 1.5rem 2.5rem;
+	text-align: right;
+}
+
+.post__img{
+	cursor: pointer;
+}
+
+.post__title{
+	margin-bottom: 1.5rem;
+	.font_700_s18();
+}
+
+.post__date{
+	display: inline-block;
+}
+
+.post__date_absolute{
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+	
+	background-color: @add_color_theme;
+	padding: .5rem 1rem;
+	.font_400_s16();
+	color: @color_theme_two;
+}
+
+@media screen and (max-width: 1200px){
+
+	.blog__column{
+
+		width: 32.6%; 
+		margin-top: 1vw;
+		
+		&:nth-of-type(4){
+			margin-top: 1vw;
+		}
+		
+		&:nth-of-type(4n+2), &:nth-of-type(4n+3){
+			margin-left: 0;
+			margin-right: 0;
+		}
+		
+		&:nth-of-type(3n+2){
+			margin-right: 1%;
+			margin-left: 1%;
+		}			
+	} 
+} 
+
+@media screen and (max-width: 768px){
+
+	.blog__column{
+
+		width: 49%; 
+		margin-top: 1.8vw;
+		
+		&:nth-of-type(3), &:nth-of-type(4){
+			margin-top: 1.8vw;
+		}
+		
+		&:nth-of-type(3n+2){
+			margin-right: 0;
+			margin-left: 0;
+		}
+		
+		&:nth-of-type(2n+1){
+			margin-right: .9vw;
+			margin-left: 0;
+		}
+		
+		&:nth-of-type(2n+2){
+			margin-right: 0;
+			margin-left: .9vw;
+		}
+	}
+} 
+ 
+@media screen and (max-width: 480px){
+
+	.blog__column{
+
+		width: 100%;
+		margin-top: 5vw;
+		
+		&:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4){
+			margin-top: 5vw;
+		}		
+		
+		&:nth-of-type(2n+1), &:nth-of-type(2n+2){
+			margin-right: 0;
+			margin-left: 0;
+		}	
+	}
+}

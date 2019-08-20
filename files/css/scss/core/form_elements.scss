@@ -1,0 +1,85 @@
+
+.text-field{
+	
+	border: 1px solid $color_theme_one;
+	padding: 1.5rem 5% 1.5rem 4rem;
+	width: 100%;
+	box-sizing: border-box;
+	
+	font-family: $font_family;
+	@include font_400_s14();
+	
+	&:focus{
+		border-color: transparent;
+		outline: 2px solid $add_color_theme; 
+	}
+}
+
+.textarea{
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 5rem;
+	max-height: 10rem;
+}
+ 
+.button{
+	    
+	position: relative;
+	background-color: $color_theme_one;
+	cursor: pointer;
+	@include transition(border-color, .4s, ease-out, 0s);
+	padding: 10px 15px;
+	box-sizing: border-box;
+	
+	@include font_700_s16();
+	color: $color_theme_two;
+
+	&:after{
+
+		content: "";
+		display: block;
+
+		width: 90%;
+		height: 90%;
+
+		background-color: $color_theme_two;
+		border: 0.1rem solid transparent;
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		@include complex_transition(transform, color, .3s, ease, 0);
+		@include transform_scale(-50%, -50%, 0);
+	}
+		
+	&:hover{
+		&:after{
+			border-color: $color_theme_one;
+			@include transform_scale(-50%, -50%, 1.15);
+			z-index: 2;
+		}
+	}
+	
+	&:active{
+		&:after{
+			background-color: $add_color_theme2;
+		}
+	}
+	
+	&:hover .button__label{
+		color: $color_theme_one;
+	}
+}
+
+.button__label{
+	position: relative;
+	z-index: 3;
+}
+
+@media screen and (max-width: 640px){
+
+	.text-field{		
+		padding: 1.5rem 1% 1.5rem 7%;
+	}
+}

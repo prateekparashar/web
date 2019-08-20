@@ -1,0 +1,66 @@
+
+.services{
+	@include flexwrap(wrap);
+}
+
+.service{
+
+	width: 45%;
+	position: relative;
+	background-color: $add_color_theme2;
+	
+	padding: 4rem 2% 2.5rem;
+	margin: 5.2rem 1% 0 0;
+	@include transition(box-shadow, .4s, ease-out, 0s);
+	
+	&:hover{
+		box-shadow: 0 0 0.7rem 0 $add_color_theme3; 
+	}
+	
+	&:first-of-type, &:nth-child(2){
+		margin-top: 2.5rem;
+	}
+	
+	&:nth-child(2n+2){
+		margin-right: 0;
+		margin-left: 1%;
+	}
+}
+
+.service__header{
+	margin-bottom: 1rem;
+	position: relative;
+}
+
+.service__icon{
+	@include absolute_center_block();
+	top: 0;
+}
+
+.service__name{
+	text-align: center;
+	text-transform: none;
+}
+
+.service__description{
+	@include font_400_s14()
+}
+
+@media screen and (max-width: 640px){
+
+	.service{
+		
+		width: 96%;
+		padding: 4rem 2% 2.5rem;
+		margin-right: 0;
+		margin-top: 5rem;
+		
+		&:first-of-type{
+			margin-top: 2.7rem;
+		}
+		
+		&:nth-child(2){
+			margin-top: 5rem;
+		}
+	}
+}

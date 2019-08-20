@@ -1,0 +1,314 @@
+
+@mixin path($name){
+    $base-path: "../../../icons/"; 
+    background-image: url($base-path + $name);	 
+}
+ 
+.icon-twitter{
+
+	&:before{
+		@include path("twitter_w.svg");
+	}
+}
+
+.icon-facebook{
+	
+	&:before{
+		@include path("facebook_w.svg");
+	}
+}
+
+.icon-github{
+
+	&:before{
+		@include path("mark-github_w.svg");
+	}
+}
+
+.icon-user{
+
+	&:before{
+		@include path("user_b.svg");
+	}
+}
+
+.icon-gplus{
+
+	&:before{
+		@include path("google-plus_w.svg");
+	}
+}
+
+.icon-thumbs-up{
+
+	&:before{
+		@include path("thumbs-o-up_w.svg");
+	}
+}
+
+.icon-message{
+
+	&:before{
+		@include path("message_b.svg");
+	}
+}
+
+.icon-mail{
+
+	&:before{
+		@include path("mail_b.svg");
+	}
+}
+
+.icon-smile{
+	&:before{
+		@include path("smile_w.svg");
+	}
+}
+
+.icon-html5{
+	&:before{
+		@include path("html5_w.svg");
+	}
+}
+
+.icon-pencil{
+	&:before{
+		@include path("pencil_b.svg");
+	}
+}
+
+.icon-desktop{
+	&:before{
+		@include path("desktop_w.svg");
+	}
+}
+
+.icon-camera{
+	&:before{
+		@include path("camera_w.svg");
+	}
+}
+
+.icon-chart-bar{
+	&:before{
+		@include path("bar-chart_w.svg");
+	}
+}
+
+.icon-coffee{
+	&:before{
+		@include path("coffee_w.svg");
+	}
+}
+
+.icon-award{
+	&:before{
+		@include path("cup_b.svg");
+	}
+}
+
+.icon-linkedin{
+	
+	&:before{
+		@include path("linkedin_w.svg");
+	}
+}
+
+.icon-codeopen{
+
+	&:before{
+		@include path("codepen_w.svg");
+	}
+
+}
+
+.icon-home{
+	&:before{
+		@include path("home_b.svg");
+	}
+}
+
+.icon-diamond{
+	&:before{
+		@include path("diamond_b.svg");
+	}
+}
+
+.icon-design{
+
+	&:before{
+		@include path("ruler_w.svg");
+	}
+}
+
+.icon-device-mobile{
+
+	&:before{
+		@include path("device-mobile_w.svg");
+	}
+}
+
+.icon-keyboard{
+
+	&:before{
+		@include path("keyboard_w.svg");
+	}
+}
+
+.icon-th{
+
+	&:before{
+		@include path("th_b.svg");
+	}
+}
+
+.icon-css3{
+
+	&:before{
+		@include path("css3_w.svg");
+	}
+}
+
+.icon-services{
+
+	&:before{
+		@include path("window_b.svg");
+	}
+}
+
+.icon-skills{
+
+	&:before{
+		@include path("lightbulb-o_b.svg");
+	}
+}
+
+$icon_size: 3rem;
+$icon_middle_size: 2rem;
+
+.icon{
+	
+	position: relative;
+	display: inline-block;
+	
+	width: $icon_size;
+	height: $icon_size;
+
+	&:before{
+		
+		content: "";
+		display: inline-block;
+		
+		width: 100%;
+		height: 100%;
+		
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 50%;
+	}
+}
+
+.icon_middle{
+	width: $icon_middle_size;
+	height: $icon_middle_size;
+}
+
+.icon_rounded{
+
+	border-radius: 50%;
+	overflow: hidden;
+	padding: 1rem;
+
+	&:before{
+		position: relative;	
+		z-index: 2;
+	}
+	
+	&:last-child{
+		margin-right: 0;
+	}
+}
+
+.icon_rounded-hover{
+
+	&:after{
+
+		content: "";
+		display: block;
+		border-radius: 50%;
+		
+		width: 100%;
+		height: 100%;
+		
+		@include absolute_center_block();
+		@include complex_transition(transform, color, .3s, ease, 0s);
+		@include transform_scale(-50%, -50%, 0);
+	}
+
+	&:hover:after{
+		@include transform_scale(-50%, -50%, 1.4);
+	}
+	
+	&.icon-twitter{
+		
+		&:hover:before{
+			@include path("twitter_b.svg");
+		}
+	}
+	
+	&.icon-codeopen{
+		&:hover:before{
+			@include path("codepen_b.svg");
+		}	
+	}
+	
+	&.icon-linkedin{
+		&:hover:before{
+			@include path("linkedin_b.svg");
+		}
+	}
+	
+	&.icon-facebook{
+		&:hover:before{
+			@include path("facebook_b.svg");
+		}
+	}
+
+	&.icon-github{
+		
+		&:hover:before{
+			@include path("mark-github_b.svg");
+		}
+	}
+	
+	&.icon-gplus{
+
+		&:hover:before{
+			@include path("google-plus_b.svg");
+		}
+	}
+}
+
+.icon_rounded-black{
+
+	background-color: $color_theme_one;
+	
+	&:before{
+		color: $color_theme_two;
+	}
+	
+	&:after{
+		background-color: $color_theme_two;
+	}
+} 
+
+.icon_rounded-crimson{
+
+	background-color: $add_color_theme;
+	
+	&:before{
+		color: $color_theme_two;
+	}
+}
+

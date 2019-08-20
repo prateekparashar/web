@@ -1,0 +1,50 @@
+
+.title{
+	@include font_300_s35();
+	color: $color_theme_one;
+    text-transform: uppercase;
+}
+
+.title_middle{
+	@include font_300_s28();
+}
+
+.title_small{
+	@include font_700_s24();
+}
+
+.title_little{
+	@include font_700_s22();
+}
+
+.title_bottom-decor{
+
+    margin-bottom: 1.5rem;
+	
+	&:after{
+		content: "";
+		display: block;
+		@include bottom_line_decor();
+	}
+}
+
+.subtitle{
+	margin-bottom: 1.5rem;
+	color: $add_color_theme;
+}
+
+.title_white{
+	
+	color: $color_theme_two;
+	
+	&:after{
+		background-color: $color_theme_two;
+	}
+}
+
+@media screen and (max-width: 640px){
+	
+	.title_bottom-decor{
+		margin-bottom: 1rem;
+	}
+} 
